@@ -1,5 +1,3 @@
-/********** EDELROS MODERN STYLE **********/
-
 :root {
     --primary: #2F5233;
     --secondary: #8B6B4A;
@@ -22,43 +20,10 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 700;
 }
 
-/* BUTTONS */
-
-.btn {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: .5px;
-    font-weight: 600;
-    transition: .35s ease;
-    border-radius: 12px;
-    padding: 12px 28px;
-}
-
-.btn-primary {
-    background: var(--primary);
-    border: none;
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #1E3522;
-    transform: translateY(-3px);
-}
-
-.btn-secondary {
-    background: var(--secondary);
-    border: none;
-    color: white;
-}
-
-.btn-secondary:hover {
-    background: #705237;
-    transform: translateY(-3px);
-}
-
 /* NAVBAR */
 
 .navbar-dark {
-    background: rgba(20,35,20,0.88) !important;
+    background: rgba(20,35,20,0.90) !important;
     backdrop-filter: blur(10px);
 }
 
@@ -69,7 +34,6 @@ h1,h2,h3,h4,h5,h6{
     color: white;
     text-transform: uppercase;
     transition: .3s;
-    letter-spacing: .5px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -77,47 +41,58 @@ h1,h2,h3,h4,h5,h6{
     color: #C7A86B;
 }
 
-/* LOGO */
-
-.navbar-brand img{
-    height:85px;
-    filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.4));
-}
-
 /* HERO */
 
 .carousel-item img{
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(55%);
+    height:100vh;
+    object-fit:cover;
+    filter:brightness(55%);
 }
 
 .carousel-caption{
-    bottom: 15%;
-}
-
-.carousel-caption h3{
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 2px;
+    bottom:15%;
 }
 
 .carousel-caption h1{
-    font-size: 70px;
-    font-weight: 800 !important;
-    line-height: 1.1;
-    text-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+    font-size:70px;
+    font-weight:800;
 }
 
-/* CAROUSEL BUTTONS */
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-    width:4rem;
-    height:4rem;
+.carousel-caption h3{
+    font-size:22px;
+    letter-spacing:2px;
 }
 
-/* MODERN BANNERS SIN TRIGO */
+/* BOTONES */
+
+.btn{
+    border-radius:12px;
+    padding:12px 28px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:#2F5233;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#1E3522;
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    background:#8B6B4A;
+    border:none;
+}
+
+.btn-secondary:hover{
+    background:#705237;
+    transform:translateY(-3px);
+}
+
+/* BANNERS MODERNOS */
 
 .bg-vegetable {
     background:
@@ -143,63 +118,39 @@ h1,h2,h3,h4,h5,h6{
 
 /* CARDS */
 
-.service-item {
-    border-radius: 24px;
-    background: white;
-    box-shadow: 0px 10px 35px rgba(0,0,0,0.06);
-    transition: .35s ease;
-    border: none;
+.service-item{
+    border-radius:24px;
+    background:white;
+    box-shadow:0px 10px 35px rgba(0,0,0,0.06);
+    transition:.35s;
+    border:none;
 }
 
-.service-item:hover {
-    transform: translateY(-10px);
-    background: var(--primary) !important;
-    color: white;
-}
-
-.service-item i {
-    color: var(--primary);
-    transition: .35s;
-}
-
-.service-item:hover i{
-    color: #C7A86B;
-}
-
-.service-item:hover h4{
+.service-item:hover{
+    transform:translateY(-10px);
+    background:#2F5233 !important;
     color:white;
+}
+
+.service-item i{
+    color:#2F5233;
 }
 
 /* ABOUT */
 
 .about img{
-    border-radius: 30px;
+    border-radius:30px;
 }
 
-/* FEATURES */
+/* FEATURE */
 
 .feature{
     background:
     linear-gradient(rgba(20,35,20,.88), rgba(20,35,20,.88)),
     url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop);
-    background-size: cover;
-    background-position: center;
-}
 
-/* PRODUCTS */
-
-.product-item{
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
-}
-
-.product-item img{
-    transition:.4s;
-}
-
-.product-item:hover img{
-    transform:scale(1.08);
+    background-size:cover;
+    background-position:center;
 }
 
 /* TESTIMONIAL */
@@ -208,26 +159,9 @@ h1,h2,h3,h4,h5,h6{
     background:
     linear-gradient(rgba(20,35,20,.72), rgba(20,35,20,.72)),
     url(https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop);
-    background-size: cover;
-    background-position: center;
-}
 
-.testimonial-carousel{
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(8px);
-    border-radius: 25px;
-}
-
-/* BLOG */
-
-.blog-item{
-    border-radius:24px;
-    overflow:hidden;
-}
-
-.blog-overlay{
-    background:
-    linear-gradient(rgba(0,0,0,0.05), rgba(20,35,20,0.92));
+    background-size:cover;
+    background-position:center;
 }
 
 /* FOOTER */
@@ -236,52 +170,21 @@ h1,h2,h3,h4,h5,h6{
     background:
     linear-gradient(rgba(20,35,20,.95), rgba(20,35,20,.95)),
     url(https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?q=80&w=1600&auto=format&fit=crop);
-    background-position:center;
+
     background-size:cover;
+    background-position:center;
 }
 
 /* RESPONSIVE */
 
-@media (max-width: 991px){
-
-.navbar-dark .navbar-nav .nav-link{
-    padding:12px;
-}
+@media (max-width:768px){
 
 .carousel-caption h1{
-    font-size:42px;
+    font-size:36px;
 }
 
 .carousel-caption h3{
-    font-size:18px;
-}
-
-}
-
-@media (max-width: 576px){
-
-.carousel-item img{
-    height:85vh;
-}
-
-.carousel-caption{
-    bottom:12%;
-}
-
-.carousel-caption h1{
-    font-size:32px;
-}
-
-.carousel-caption h3{
-    font-size:15px;
-}
-
-.btn{
-    padding:10px 20px;
-}
-
-.navbar-brand img{
-    height:65px;
+    font-size:16px;
 }
 
 }
