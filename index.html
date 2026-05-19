@@ -8,284 +8,218 @@
     <meta content="EDELROS AGROINTEGRAL" name="keywords">
     <meta content="Sembramos con fe, crecemos con propósito" name="description">
 
+    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- CSS -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            font-family: 'Open Sans', sans-serif;
+            background:#F4EFE3;
+        }
+
+        .navbar{
+            background:#2F5233;
+        }
+
+        .btn-primary{
+            background:#2F5233;
+            border:none;
+        }
+
+        .btn-secondary{
+            background:#8B6B4A;
+            border:none;
+        }
+
+        .text-primary{
+            color:#2F5233 !important;
+        }
+
+        .hero-section{
+            background:url('img/carousel-1.jpg') center center/cover no-repeat;
+            height:90vh;
+            position:relative;
+        }
+
+        .hero-overlay{
+            background:rgba(0,0,0,0.5);
+            position:absolute;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+        }
+
+        .hero-content{
+            position:relative;
+            z-index:2;
+        }
+
+        .service-box{
+            background:white;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .service-box:hover{
+            transform:translateY(-10px);
+        }
+
+        .footer{
+            background:#2F5233;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-    <!-- Topbar -->
-    <div class="container-fluid px-5 d-none d-lg-block bg-light">
-        <div class="row gx-5 py-3 align-items-center">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3 px-4">
 
-            <div class="col-lg-3">
-                <div class="d-flex align-items-center justify-content-start">
-                    <i class="bi bi-telephone-fill fs-1 text-primary me-2"></i>
-                    <h5 class="mb-0 text-dark">Guachucal - Nariño</h5>
-                </div>
-            </div>
+    <div class="container">
 
-            <div class="col-lg-6 text-center">
-                <a href="index.html" class="navbar-brand">
-                    <img src="logo.png" style="height:80px;">
-                </a>
-            </div>
-
-            <div class="col-lg-3">
-                <div class="d-flex align-items-center justify-content-end">
-                    <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
-
-        <a href="index.html" class="navbar-brand d-flex d-lg-none">
-            <h1 class="m-0 display-5 text-white">EDELROS</h1>
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" style="height:70px;">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-            <div class="navbar-nav mx-auto py-0">
+            <ul class="navbar-nav ms-auto">
 
-                <a href="#" class="nav-item nav-link active">Inicio</a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                </li>
 
-                <a href="#" class="nav-item nav-link">Nosotros</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
 
-                <a href="#" class="nav-item nav-link">Servicios</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
 
-                <a href="#" class="nav-item nav-link">Producción</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Producción</a>
+                </li>
 
-                <a href="#" class="nav-item nav-link">Contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
 
-            </div>
-
-        </div>
-
-    </nav>
-
-    <!-- Carousel -->
-    <div class="container-fluid p-0">
-
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-
-                    <img class="w-100" src="img/carousel-1.jpg" alt="">
-
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-
-                        <div class="p-5 text-center" style="max-width: 900px;">
-
-                            <h3 class="text-white">
-                                Producción sostenible
-                            </h3>
-
-                            <h1 class="display-2 text-white mb-md-4">
-                                Sembramos con fe, crecemos con propósito
-                            </h1>
-
-                            <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">
-                                Conócenos
-                            </a>
-
-                            <a href="#" class="btn btn-secondary py-md-3 px-md-5">
-                                Contacto
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="carousel-item">
-
-                    <img class="w-100" src="img/carousel-2.jpg" alt="">
-
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-
-                        <div class="p-5 text-center" style="max-width: 900px;">
-
-                            <h3 class="text-white">
-                                Campo y transformación
-                            </h3>
-
-                            <h1 class="display-2 text-white mb-md-4">
-                                Agrointegración con visión humana y sostenible
-                            </h1>
-
-                            <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3">
-                                Nuestros proyectos
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+            </ul>
 
         </div>
 
     </div>
 
-    <!-- About -->
-    <div class="container-fluid about py-5">
+</nav>
 
-        <div class="container">
+<!-- HERO -->
+<section class="hero-section d-flex align-items-center text-center text-white">
 
-            <div class="row gx-5">
+    <div class="hero-overlay"></div>
 
-                <div class="col-lg-6 mb-5 mb-lg-0">
+    <div class="container hero-content">
 
-                    <img class="img-fluid rounded shadow" src="img/about.png">
+        <h1 class="display-2 fw-bold mb-4">
+            EDELROS AGROINTEGRAL
+        </h1>
 
-                </div>
+        <h3 class="mb-4">
+            Sembramos con fe, crecemos con propósito
+        </h3>
 
-                <div class="col-lg-6">
+        <a href="#" class="btn btn-primary btn-lg px-5 py-3 me-3">
+            Conócenos
+        </a>
 
-                    <div class="mb-3">
-
-                        <h6 class="text-primary text-uppercase">
-                            Nuestra esencia
-                        </h6>
-
-                        <h1 class="display-5">
-                            EDELROS AGROINTEGRAL
-                        </h1>
-
-                    </div>
-
-                    <p class="mb-4">
-
-                        Somos una iniciativa enfocada en el desarrollo sostenible,
-                        la producción agropecuaria responsable y la transformación
-                        del campo con propósito, identidad y compromiso humano.
-
-                    </p>
-
-                    <div class="row g-4">
-
-                        <div class="col-sm-6">
-
-                            <div class="bg-light p-4 rounded shadow-sm text-center">
-
-                                <i class="fa fa-seedling display-4 text-primary mb-3"></i>
-
-                                <h4>Producción sostenible</h4>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-sm-6">
-
-                            <div class="bg-light p-4 rounded shadow-sm text-center">
-
-                                <i class="fa fa-tractor display-4 text-primary mb-3"></i>
-
-                                <h4>Trabajo agroindustrial</h4>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+        <a href="#" class="btn btn-secondary btn-lg px-5 py-3">
+            Contacto
+        </a>
 
     </div>
 
-    <!-- Services -->
-    <div class="container-fluid py-5 bg-light">
+</section>
 
-        <div class="container">
+<!-- ABOUT -->
+<section class="py-5">
 
-            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 mb-4">
+
+                <img src="img/about.png" class="img-fluid rounded shadow">
+
+            </div>
+
+            <div class="col-lg-6">
 
                 <h6 class="text-primary text-uppercase">
-                    Servicios
+                    Nuestra esencia
                 </h6>
 
-                <h1 class="display-5">
-                    Áreas de desarrollo
+                <h1 class="display-5 mb-4">
+                    Transformamos el campo con visión sostenible
                 </h1>
 
-            </div>
+                <p class="mb-4">
 
-            <div class="row g-4">
+                    EDELROS AGROINTEGRAL es una iniciativa enfocada
+                    en el fortalecimiento agropecuario, la sostenibilidad,
+                    la producción responsable y el crecimiento del sector rural.
 
-                <div class="col-lg-4">
+                </p>
 
-                    <div class="service-item text-center p-5 bg-white shadow rounded">
+                <div class="row">
 
-                        <i class="fa fa-cow display-4 text-primary mb-4"></i>
+                    <div class="col-md-6 mb-3">
 
-                        <h4>Ganadería</h4>
+                        <div class="service-box p-4 shadow-sm text-center">
 
-                        <p>
-                            Producción responsable y fortalecimiento del sector rural.
-                        </p>
+                            <i class="fa fa-seedling fa-3x text-primary mb-3"></i>
 
-                    </div>
+                            <h5>
+                                Producción sostenible
+                            </h5>
 
-                </div>
-
-                <div class="col-lg-4">
-
-                    <div class="service-item text-center p-5 bg-white shadow rounded">
-
-                        <i class="fa fa-truck display-4 text-primary mb-4"></i>
-
-                        <h4>Logística agro</h4>
-
-                        <p>
-                            Transporte y comercialización eficiente del campo.
-                        </p>
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="col-md-6 mb-3">
 
-                <div class="col-lg-4">
+                        <div class="service-box p-4 shadow-sm text-center">
 
-                    <div class="service-item text-center p-5 bg-white shadow rounded">
+                            <i class="fa fa-tractor fa-3x text-primary mb-3"></i>
 
-                        <i class="fa fa-leaf display-4 text-primary mb-4"></i>
+                            <h5>
+                                Desarrollo agroindustrial
+                            </h5>
 
-                        <h4>Sostenibilidad</h4>
-
-                        <p>
-                            Procesos con visión ambiental y compromiso social.
-                        </p>
+                        </div>
 
                     </div>
 
@@ -297,38 +231,78 @@
 
     </div>
 
-    <!-- Footer -->
-    <div class="container-fluid footer text-white py-5">
+</section>
 
-        <div class="container text-center">
+<!-- SERVICES -->
+<section class="py-5 bg-light">
 
-            <img src="logo.png" style="height:90px;" class="mb-4">
+    <div class="container">
 
-            <h3 class="text-white mb-3">
-                EDELROS AGROINTEGRAL
-            </h3>
+        <div class="text-center mb-5">
 
-            <p class="mb-2">
-                Guachucal - Nariño - Colombia
-            </p>
+            <h6 class="text-primary text-uppercase">
+                Servicios
+            </h6>
 
-            <p class="mb-4">
-                Sembramos con fe, crecemos con propósito.
-            </p>
+            <h1 class="display-5">
+                Áreas de trabajo
+            </h1>
 
-            <div class="d-flex justify-content-center">
+        </div>
 
-                <a class="btn btn-secondary btn-square rounded-circle me-2" href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
+        <div class="row">
 
-                <a class="btn btn-secondary btn-square rounded-circle me-2" href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <div class="col-lg-4 mb-4">
 
-                <a class="btn btn-secondary btn-square rounded-circle" href="#">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+                <div class="service-box p-5 shadow text-center h-100">
+
+                    <i class="fa fa-cow fa-3x text-primary mb-4"></i>
+
+                    <h4>
+                        Ganadería
+                    </h4>
+
+                    <p>
+                        Producción responsable y fortalecimiento rural.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 mb-4">
+
+                <div class="service-box p-5 shadow text-center h-100">
+
+                    <i class="fa fa-truck fa-3x text-primary mb-4"></i>
+
+                    <h4>
+                        Transporte agro
+                    </h4>
+
+                    <p>
+                        Logística y comercialización eficiente del campo.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 mb-4">
+
+                <div class="service-box p-5 shadow text-center h-100">
+
+                    <i class="fa fa-leaf fa-3x text-primary mb-4"></i>
+
+                    <h4>
+                        Sostenibilidad
+                    </h4>
+
+                    <p>
+                        Procesos responsables con impacto ambiental positivo.
+                    </p>
+
+                </div>
 
             </div>
 
@@ -336,15 +310,49 @@
 
     </div>
 
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- FOOTER -->
+<footer class="footer text-white text-center py-5">
 
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <div class="container">
 
-    <script src="js/main.js"></script>
+        <img src="logo.png" style="height:90px;" class="mb-4">
+
+        <h3 class="mb-3">
+            EDELROS AGROINTEGRAL
+        </h3>
+
+        <p>
+            Guachucal - Nariño - Colombia
+        </p>
+
+        <p>
+            Sembramos con fe, crecemos con propósito.
+        </p>
+
+        <div class="mt-4">
+
+            <a href="#" class="btn btn-secondary btn-square rounded-circle me-2">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="btn btn-secondary btn-square rounded-circle me-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" class="btn btn-secondary btn-square rounded-circle">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
