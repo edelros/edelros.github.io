@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+[12:15 a.m., 19/5/2026] Karen Ojeda Guerrero: <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -31,170 +31,300 @@
       url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1800&auto=format&fit=crop');
 
       background-size:cover;
-      background-position:center;
+      backg…
+[10:58 a.m., 19/5/2026] Karen Ojeda Guerrero: <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDELROS AGROINTEGRAL SAS</title>
 
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
+<style>
 
-      padding:20px;
-      color:white;
-    }
+body{
+    margin:0;
+    font-family:'Georgia', serif;
+    background:#ffffff;
+    color:#2f3b2f;
+}
 
-    .hero img{
-      width:120px;
-      margin-bottom:20px;
-      border-radius:50%;
-      background:white;
-      padding:8px;
-    }
+/* ENCABEZADO */
 
-    .hero h1{
-      font-size:3rem;
-      font-weight:800;
-    }
+header{
+    background:linear-gradient(to right,#355e3b,#7b4a35);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
 
-    .hero span{
-      color:#ff5252;
-    }
+/* LOGO */
 
-    .hero p{
-      margin-top:15px;
-      max-width:700px;
-      line-height:1.7;
-      opacity:0.9;
-    }
+.logo{
+    width:220px;
+    margin-bottom:25px;
+}
 
-    .slogan{
-      margin-top:20px;
-      font-size:1.2rem;
-      font-weight:600;
-      color:#a5d6a7;
-    }
+/* NOMBRE */
 
-    /* SECTIONS */
+header h1{
+    font-size:60px;
+    margin:0;
+    letter-spacing:5px;
+    color:#ffffff;
+}
 
-    section{
-      padding:80px 8%;
-    }
+/* SUBTITULO */
 
-    h2{
-      text-align:center;
-      font-size:2.2rem;
-      color:#1b5e20;
-      margin-bottom:40px;
-    }
+header h2{
+    font-size:24px;
+    font-weight:normal;
+    margin-top:10px;
+    color:#f5f5f5;
+    letter-spacing:3px;
+}
 
-    /* ABOUT */
+/* ESLOGAN */
 
-    .about{
-      max-width:900px;
-      margin:auto;
-      line-height:1.9;
-      text-align:center;
-      color:#374151;
-    }
+header p{
+    font-size:22px;
+    margin-top:20px;
+    font-style:italic;
+    color:#f8f8f8;
+}
 
-    /* VALUES */
+/* SECCIONES */
 
-    .values{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
 
-    .card{
-      background:white;
-      padding:25px;
-      border-radius:20px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.08);
-      transition:0.3s;
-    }
+h2{
+    color:#355e3b;
+    font-size:36px;
+    margin-bottom:20px;
+    border-left:6px solid #7b4a35;
+    padding-left:15px;
+}
 
-    .card:hover{
-      transform:translateY(-6px);
-    }
+p{
+    font-size:20px;
+    line-height:1.8;
+}
 
-    .card h3{
-      color:#2e7d32;
-      margin-bottom:10px;
-    }
+/* TARJETAS */
 
-    .card p{
-      color:#6b7280;
-      line-height:1.6;
-      font-size:0.95rem;
-    }
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
 
-    /* FOOTER */
+.card{
+    background:#f7f7f7;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
 
-    footer{
-      background:#0f172a;
-      color:white;
-      text-align:center;
-      padding:40px 20px;
-    }
+.card h3{
+    color:#7b4a35;
+    margin-bottom:10px;
+}
 
-    footer p{
-      margin-top:10px;
-      opacity:0.8;
-    }
+/* FOOTER */
 
-  </style>
+footer{
+    background:#355e3b;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:42px;
+}
+
+header h2{
+    font-size:18px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.logo{
+    width:170px;
+}
+
+h2{
+    font-size:28px;
+}
+
+p{
+    font-size:18px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <div class="hero">
+<!-- ENCABEZADO -->
 
-    <div>
+<header>
 
-      <img src="logo.png" alt="Logo EDELROS">
+<img src="logo.png" alt="Logo EDELROS" class="logo">
 
-      <h1>
-        EDELROS <span>AGROINTEGRAL</span>
-      </h1>
+<h1>EDELROS</h1>
 
-      <p>
-        Agricultura • Ganadería • Agroindustria • Capacitación • Desarrollo Rural • Sostenibilidad
-      </p>
+<h2>AGROINTEGRAL SAS</h2>
 
-      <div class="slogan">
-        “Sembramos con fe, crecemos con propósito.”
-      </div>
+<p>Sembramos con fe, crecemos con propósito.</p>
 
-    </div>
+</header>
 
-  </div>
+<!-- QUIENES SOMOS -->
 
-  <!-- ABOUT -->
-  <section>
+<section>
 
-    <h2>Nuestra Historia</h2>
+<h2>Quiénes Somos</h2>
 
-    <div class="about">
+<p>
+EDELROS AGROINTEGRAL SAS nace como un proyecto inspirado en Dios,
+la familia y el amor por el campo.
+Somos una empresa con visión agroindustrial y comercial enfocada en el
+desarrollo sostenible, la producción agropecuaria y el crecimiento rural
+con propósito.
+</p>
 
-      EDELROS AGROINTEGRAL nace de una historia familiar que une fe, trabajo y propósito.  
-      Cada elemento de nuestro logo representa nuestras raíces:  
-      el árbol simboliza a nuestra abuela Delmira, la rosa a nuestra abuela Rosa,  
-      el camión a nuestro padre conductor, el libro a nuestra madre docente,  
-      la niña representa el futuro, el abuelo Jorge la sabiduría y la cruz a Dios como guía.  
+</section>
 
-      Esta unión da vida a una empresa con identidad, propósito y visión agroindustrial sostenible.
+<!-- MISION -->
 
-    </div>
+<section>
 
-  </section>
+<h2>Misión</h2>
 
-  <!-- VALUES -->
-  <section>
+<p>
+Brindar soluciones agroindustriales y comerciales con responsabilidad,
+compromiso y visión sostenible, promoviendo el desarrollo del campo y
+el crecimiento rural guiados por principios de fe, honestidad y trabajo.
+</p>
 
-    <h2>Nuestros Valores</h2>
+</section>
 
-    <div class="values">
+<!-- VISION -->
 
-      <div class="card">
-        <h3>Sostenibilidad</h3>
-        <p>Proteg
+<section>
+
+<h2>Visión</h2>
+
+<p>
+Ser una empresa agroindustrial reconocida por su compromiso con el
+desarrollo sostenible, la innovación y el fortalecimiento del sector
+agropecuario, generando impacto positivo en las comunidades rurales.
+</p>
+
+</section>
+
+<!-- VALORES -->
+
+<section>
+
+<h2>Valores</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Fe</h3>
+<p>Dios como guía y fundamento de nuestro propósito.</p>
+</div>
+
+<div class="card">
+<h3>Familia</h3>
+<p>La unión y el legado familiar como base de crecimiento.</p>
+</div>
+
+<div class="card">
+<h3>Sostenibilidad</h3>
+<p>Compromiso con el cuidado del campo y el medio ambiente.</p>
+</div>
+
+<div class="card">
+<h3>Honestidad</h3>
+<p>Trabajo transparente y responsable.</p>
+</div>
+
+<div class="card">
+<h3>Trabajo</h3>
+<p>Disciplina y esfuerzo para construir un mejor futuro.</p>
+</div>
+
+<div class="card">
+<h3>Amor por el Campo</h3>
+<p>Pasión por el agro y el desarrollo rural.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+
+<section>
+
+<h2>¿Qué Hacemos?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Producción Agropecuaria</h3>
+<p>Actividades ganaderas y rurales sostenibles.</p>
+</div>
+
+<div class="card">
+<h3>Comercialización</h3>
+<p>Compra, venta y distribución de productos agropecuarios.</p>
+</div>
+
+<div class="card">
+<h3>Transformación Agroindustrial</h3>
+<p>Procesamiento y desarrollo de productos con valor agregado.</p>
+</div>
+
+<div class="card">
+<h3>Capacitación</h3>
+<p>Fortalecimiento y apoyo al sector agroindustrial.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>EDELROS AGROINTEGRAL SAS</h3>
+
+<p>Campo • Familia • Fe • Sostenibilidad</p>
+
+</footer>
+
+</body>
+</html>
