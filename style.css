@@ -1,0 +1,43 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f7f2e8;
+color:#234b1f;
+}
+
+header{
+text-align:center;
+padding:40px;
+}
+
+header img{
+width:320px;
+max-width:90%;
+}
+
+h1{
+font-size:52px;
+}
+
+section{
+width:90%;
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#234b1f;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
