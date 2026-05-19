@@ -1,358 +1,181 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>EDELROS AGROINTEGRAL</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="EDELROS AGROINTEGRAL" name="keywords">
-    <meta content="Sembramos con fe, crecemos con propósito" name="description">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <title>EDELROS AGROINTEGRAL</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS -->
-   <link href="style.css?v=2" rel="stylesheet">
-
-    <style>
-
-        body{
-            font-family: 'Open Sans', sans-serif;
-            background:#F4EFE3;
-        }
-
-        .navbar{
-            background:#2F5233;
-        }
-
-        .btn-primary{
-            background:#2F5233;
-            border:none;
-        }
-
-        .btn-secondary{
-            background:#8B6B4A;
-            border:none;
-        }
-
-        .text-primary{
-            color:#2F5233 !important;
-        }
-
-        .hero-section{
-            background:url('img/carousel-1.jpg') center center/cover no-repeat;
-            height:90vh;
-            position:relative;
-        }
-
-        .hero-overlay{
-            background:rgba(0,0,0,0.5);
-            position:absolute;
-            width:100%;
-            height:100%;
-            top:0;
-            left:0;
-        }
-
-        .hero-content{
-            position:relative;
-            z-index:2;
-        }
-
-        .service-box{
-            background:white;
-            border-radius:15px;
-            transition:0.3s;
-        }
-
-        .service-box:hover{
-            transform:translateY(-10px);
-        }
-
-        .footer{
-            background:#2F5233;
-        }
-
-    </style>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark py-3 px-4">
+  <!-- NAVBAR -->
 
-    <div class="container">
+  <nav>
 
-        <a class="navbar-brand" href="#">
-            <img src="logo.png" style="height:70px;">
+    <div class="logo">
+
+      <img src="logo.png" alt="Logo">
+
+      <h2>EDELROS AGROINTEGRAL</h2>
+
+    </div>
+
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <img src="logo.png" alt="Logo">
+
+      <h1>
+        Sustainable <span>Agroindustrial</span> Development
+      </h1>
+
+      <p>
+        Agriculture, livestock, rural development, sustainable production,
+        training programs, and agroindustrial innovation.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#" class="btn btn-green">
+          Our Services
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Inicio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Producción</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</nav>
-
-<!-- HERO -->
-<section class="hero-section d-flex align-items-center text-center text-white">
-
-    <div class="hero-overlay"></div>
-
-    <div class="container hero-content">
-
-        <h1 class="display-2 fw-bold mb-4">
-            EDELROS AGROINTEGRAL
-        </h1>
-
-        <h3 class="mb-4">
-            Sembramos con fe, crecemos con propósito
-        </h3>
-
-        <a href="#" class="btn btn-primary btn-lg px-5 py-3 me-3">
-            Conócenos
+        <a href="https://wa.me/573000000000" class="btn btn-red">
+          WhatsApp
         </a>
 
-        <a href="#" class="btn btn-secondary btn-lg px-5 py-3">
-            Contacto
-        </a>
+      </div>
 
     </div>
 
-</section>
+  </section>
 
-<!-- ABOUT -->
-<section class="py-5">
+  <!-- ABOUT -->
 
-    <div class="container">
+  <section class="section">
 
-        <div class="row align-items-center">
+    <div class="title">
 
-            <div class="col-lg-6 mb-4">
+      <h2>About Us</h2>
 
-                <img src="img/about.png" class="img-fluid rounded shadow">
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <h6 class="text-primary text-uppercase">
-                    Nuestra esencia
-                </h6>
-
-                <h1 class="display-5 mb-4">
-                    Transformamos el campo con visión sostenible
-                </h1>
-
-                <p class="mb-4">
-
-                    EDELROS AGROINTEGRAL es una iniciativa enfocada
-                    en el fortalecimiento agropecuario, la sostenibilidad,
-                    la producción responsable y el crecimiento del sector rural.
-
-                </p>
-
-                <div class="row">
-
-                    <div class="col-md-6 mb-3">
-
-                        <div class="service-box p-4 shadow-sm text-center">
-
-                            <i class="fa fa-seedling fa-3x text-primary mb-3"></i>
-
-                            <h5>
-                                Producción sostenible
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6 mb-3">
-
-                        <div class="service-box p-4 shadow-sm text-center">
-
-                            <i class="fa fa-tractor fa-3x text-primary mb-3"></i>
-
-                            <h5>
-                                Desarrollo agroindustrial
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+      <p>
+        Building sustainable agricultural futures with innovation and purpose.
+      </p>
 
     </div>
 
-</section>
+    <div class="about">
 
-<!-- SERVICES -->
-<section class="py-5 bg-light">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop">
 
-    <div class="container">
+      <div class="about-text">
 
-        <div class="text-center mb-5">
-
-            <h6 class="text-primary text-uppercase">
-                Servicios
-            </h6>
-
-            <h1 class="display-5">
-                Áreas de trabajo
-            </h1>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-lg-4 mb-4">
-
-                <div class="service-box p-5 shadow text-center h-100">
-
-                    <i class="fa fa-cow fa-3x text-primary mb-4"></i>
-
-                    <h4>
-                        Ganadería
-                    </h4>
-
-                    <p>
-                        Producción responsable y fortalecimiento rural.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-4 mb-4">
-
-                <div class="service-box p-5 shadow text-center h-100">
-
-                    <i class="fa fa-truck fa-3x text-primary mb-4"></i>
-
-                    <h4>
-                        Transporte agro
-                    </h4>
-
-                    <p>
-                        Logística y comercialización eficiente del campo.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="col-lg-4 mb-4">
-
-                <div class="service-box p-5 shadow text-center h-100">
-
-                    <i class="fa fa-leaf fa-3x text-primary mb-4"></i>
-
-                    <h4>
-                        Sostenibilidad
-                    </h4>
-
-                    <p>
-                        Procesos responsables con impacto ambiental positivo.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="footer text-white text-center py-5">
-
-    <div class="container">
-
-        <img src="logo.png" style="height:90px;" class="mb-4">
-
-        <h3 class="mb-3">
-            EDELROS AGROINTEGRAL
+        <h3>
+          Agroindustrial Vision with Social Impact
         </h3>
 
         <p>
-            Guachucal - Nariño - Colombia
+          EDELROS AGROINTEGRAL is committed to sustainable agriculture,
+          livestock development, rural progress, and agroindustrial innovation.
         </p>
 
-        <p>
-            Sembramos con fe, crecemos con propósito.
-        </p>
-
-        <div class="mt-4">
-
-            <a href="#" class="btn btn-secondary btn-square rounded-circle me-2">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-
-            <a href="#" class="btn btn-secondary btn-square rounded-circle me-2">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="#" class="btn btn-secondary btn-square rounded-circle">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-
-        </div>
+      </div>
 
     </div>
 
-</footer>
+  </section>
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- SERVICES -->
+
+  <section class="section services">
+
+    <div class="title">
+
+      <h2>Our Services</h2>
+
+      <p>
+        Professional agroindustrial solutions for sustainable development.
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="icon">🌱</div>
+
+        <h3>Sustainable Agriculture</h3>
+
+        <p>
+          Modern farming solutions focused on sustainability and productivity.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🐄</div>
+
+        <h3>Livestock Farming</h3>
+
+        <p>
+          Responsible livestock and cattle development with modern practices.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🚜</div>
+
+        <h3>Agroindustrial Projects</h3>
+
+        <p>
+          Development and management of innovative agroindustrial initiatives.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <h2>EDELROS AGROINTEGRAL</h2>
+
+    <p>
+      Sustainable development • Agriculture • Livestock • Innovation
+    </p>
+
+    <p>
+      © 2026 All rights reserved
+    </p>
+
+  </footer>
 
 </body>
 </html>
