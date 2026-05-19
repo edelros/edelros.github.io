@@ -117,13 +117,28 @@ h1,h2,h3,h4,h5,h6{
     height:4rem;
 }
 
-/* BANNERS */
+/* MODERN BANNERS SIN TRIGO */
 
-.bg-vegetable,
+.bg-vegetable {
+    background:
+    linear-gradient(rgba(20,35,20,.82),
+    rgba(20,35,20,.82)),
+    url(https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1600&auto=format&fit=crop);
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 28px;
+}
+
 .bg-fruit {
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    background:
+    linear-gradient(rgba(47,82,51,.82),
+    rgba(47,82,51,.82)),
+    url(https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1600&auto=format&fit=crop);
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 28px;
 }
 
 /* CARDS */
@@ -166,7 +181,7 @@ h1,h2,h3,h4,h5,h6{
 .feature{
     background:
     linear-gradient(rgba(20,35,20,.88), rgba(20,35,20,.88)),
-    url(../img/carousel-2.jpg);
+    url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop);
     background-size: cover;
     background-position: center;
 }
@@ -192,7 +207,7 @@ h1,h2,h3,h4,h5,h6{
 .bg-testimonial{
     background:
     linear-gradient(rgba(20,35,20,.72), rgba(20,35,20,.72)),
-    url(../img/testimonial.jpg);
+    url(https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop);
     background-size: cover;
     background-position: center;
 }
@@ -220,7 +235,7 @@ h1,h2,h3,h4,h5,h6{
 .bg-footer{
     background:
     linear-gradient(rgba(20,35,20,.95), rgba(20,35,20,.95)),
-    url(../img/footer.png);
+    url(https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?q=80&w=1600&auto=format&fit=crop);
     background-position:center;
     background-size:cover;
 }
