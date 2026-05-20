@@ -688,3 +688,63 @@ footer p{
 }
 
 }
+.contact-message{
+
+    padding:120px 8%;
+
+    background:#f7f8f4;
+
+    text-align:center;
+}
+
+.contact-message h2{
+
+    font-family:'Cinzel',serif;
+
+    font-size:52px;
+
+    color:#264d2d;
+
+    margin-bottom:25px;
+}
+
+.contact-message p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:21px;
+
+    line-height:2;
+
+    color:#666;
+}
+
+.contact-btn{
+
+    display:inline-block;
+
+    margin-top:45px;
+
+    padding:18px 40px;
+
+    background:#355e3b;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:0.4s;
+}
+
+.contact-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#264d2d;
+}
