@@ -1,11 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
   background: #f5f1e8;
   color: #2e2e2e;
 }
@@ -15,18 +10,16 @@ header {
   justify-content: space-between;
   padding: 20px 50px;
   background: white;
-  align-items: center;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
   color: #333;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 20px;
 }
 
 .btn {
@@ -34,7 +27,6 @@ nav a {
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
-  text-decoration: none;
 }
 
 .btn-outline {
@@ -42,18 +34,17 @@ nav a {
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
-  text-decoration: none;
 }
 
 .hero {
   height: 90vh;
   background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   color: white;
   position: relative;
+  text-align: center;
 }
 
 .hero::before {
@@ -74,6 +65,12 @@ nav a {
   text-align: center;
 }
 
+.valor {
+  font-size: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
 .dark {
   background: #3b5d3a;
   color: white;
@@ -81,9 +78,9 @@ nav a {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .card {
@@ -94,48 +91,40 @@ nav a {
   transition: 0.3s;
 }
 
+.small .card {
+  width: 200px;
+}
+
 .card:hover {
   transform: translateY(-5px);
 }
 
 .card i {
   font-size: 30px;
-  margin-bottom: 10px;
   color: #3b5d3a;
 }
 
 .valores {
-  list-style: none;
   max-width: 600px;
   margin: auto;
   text-align: left;
 }
 
-.valores li {
-  margin: 10px 0;
-}
-
 .contacto a {
-  display: inline-block;
   margin: 10px;
+  display: inline-block;
   color: #3b5d3a;
-  text-decoration: none;
-  font-weight: 500;
 }
 
 form {
-  margin-top: 20px;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 input, textarea {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
-  border-radius: 6px;
-  border: 1px solid #ccc;
 }
 
 button {
@@ -143,31 +132,30 @@ button {
   color: white;
   padding: 12px;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
   background: #222;
   color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 footer span {
-  display: block;
   font-size: 12px;
   opacity: 0.6;
-  margin-top: 5px;
 }
 
 .legado {
-  margin-top: 25px;
+  margin-top: 20px;
   font-style: italic;
   opacity: 0.7;
 }
 
 .frase {
-  margin-top: 20px;
   font-style: italic;
+}
+
+.form-title {
+  margin-top: 30px;
 }
