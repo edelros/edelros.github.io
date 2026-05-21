@@ -7,7 +7,219 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css">
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+html{scroll-behavior:smooth;}
+
+body{
+background:#F8FAFC;
+color:#1F2937;
+}
+
+/* NAV */
+header{
+position:fixed;
+width:100%;
+background:white;
+padding:18px 70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #eee;
+z-index:1000;
+}
+
+.logo-container{
+background:white;
+padding:8px 14px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+height:65px;
+}
+
+/* MENU */
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#374151;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#C8A24C;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:58px;
+font-weight:600;
+}
+
+.hero p{
+margin-top:20px;
+max-width:600px;
+margin:auto;
+opacity:0.9;
+}
+
+/* BOTONES */
+.btn{
+padding:14px 34px;
+border-radius:40px;
+border:none;
+cursor:pointer;
+font-weight:500;
+margin:10px;
+transition:0.3s;
+}
+
+.btn-primary{
+background:#C8A24C;
+color:white;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn-secondary{
+background:white;
+color:#1F2937;
+border:1px solid #ddd;
+}
+
+.btn-secondary:hover{
+transform:translateY(-3px);
+}
+
+/* SECCIONES */
+section{
+padding:120px 80px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+.center{
+text-align:center;
+}
+
+/* HISTORIA */
+.historia{
+margin-top:20px;
+line-height:1.7;
+color:#4B5563;
+font-size:17px;
+}
+
+/* SERVICIOS */
+.soft-section{
+background:#F9F6EF;
+}
+
+.cards{
+margin-top:50px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.04);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.card p{
+color:#6B7280;
+margin-top:10px;
+}
+
+.iconos{
+margin-top:18px;
+font-size:20px;
+opacity:0.7;
+}
+
+/* FOOTER */
+footer{
+background:#1F2937;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:16px;
+border-radius:50%;
+color:white;
+font-size:22px;
+text-decoration:none;
+}
+
+/* ANIMACIÓN */
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+header{
+padding:15px 20px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+section{
+padding:80px 20px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
@@ -27,7 +239,7 @@
 
 <!-- HERO -->
 <section id="inicio" class="hero">
-<div class="hero-content">
+<div>
 <h1>Sembramos con fe,<br>crecemos con propósito</h1>
 
 <p>
@@ -35,7 +247,6 @@ Agroindustria moderna que integra tradición,
 familia y sostenibilidad con visión de futuro.
 </p>
 
-<div class="hero-buttons">
 <a href="#servicios">
 <button class="btn btn-primary">Explorar servicios</button>
 </a>
@@ -44,12 +255,11 @@ familia y sostenibilidad con visión de futuro.
 <button class="btn btn-secondary">WhatsApp</button>
 </a>
 </div>
-</div>
 </section>
 
 <!-- HISTORIA -->
 <section id="historia" class="fade">
-<div class="container">
+<div class="container center">
 <h2>Nuestra Historia</h2>
 
 <p class="historia">
@@ -57,15 +267,15 @@ EDELROS nace desde el legado familiar, inspirado en generaciones
 que trabajaron la tierra con esfuerzo, fe y amor por el campo.
 
 Hoy proyectamos ese origen hacia el futuro, integrando tradición,
-conocimiento y visión empresarial para construir una agroindustria sólida,
-sostenible y en crecimiento.
+conocimiento y visión empresarial para construir una agroindustria sólida
+y sostenible.
 </p>
 </div>
 </section>
 
 <!-- SERVICIOS -->
-<section id="servicios" class="fade dark-section">
-<div class="container">
+<section id="servicios" class="fade soft-section">
+<div class="container center">
 <h2>Servicios</h2>
 
 <div class="cards">
@@ -77,7 +287,7 @@ sostenible y en crecimiento.
 
 <div class="card">
 <h3>Manejo de Especies</h3>
-<p>Gestión técnica de diversas especies bajo bienestar animal y productividad responsable.</p>
+<p>Gestión técnica de diversas especies con bienestar animal y productividad responsable.</p>
 <div class="iconos">🐄 🐑 🐖 🐓</div>
 </div>
 
@@ -103,7 +313,7 @@ sostenible y en crecimiento.
 <p>Conéctate con nosotros directamente</p>
 
 <a href="https://wa.me/573150482093" target="_blank">
-<button class="btn btn-primary">Escribir por WhatsApp</button>
+<button class="btn btn-primary">WhatsApp</button>
 </a>
 
 <a href="https://www.instagram.com/edelros_agrointegral" target="_blank">
