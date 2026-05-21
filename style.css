@@ -6,78 +6,75 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#0F172A; /* fondo oscuro premium */
-color:#E5E7EB;
+background:#F8FAFC; /* blanco premium */
+color:#1F2937;
 }
 
 /* NAV */
 header{
 position:fixed;
 width:100%;
-background:rgba(15,23,42,0.9);
-backdrop-filter:blur(10px);
-padding:20px 80px;
+background:white;
+padding:18px 70px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+border-bottom:1px solid #eee;
 z-index:1000;
 }
 
 .logo-container{
 background:white;
-padding:10px 18px;
+padding:8px 14px;
 border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
 
 .logo{
-height:60px;
+height:65px;
 }
 
 /* MENU */
 nav a{
 margin-left:30px;
 text-decoration:none;
-color:#E5E7EB;
+color:#374151;
 font-weight:500;
 transition:0.3s;
 }
 
 nav a:hover{
-color:#D4A24C;
+color:#C8A24C;
 }
 
 /* HERO */
 .hero{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
 url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+color:white;
 padding:20px;
 }
 
 .hero h1{
-font-size:60px;
+font-size:58px;
 font-weight:600;
 }
 
 .hero p{
 margin-top:20px;
 max-width:600px;
-margin-left:auto;
-margin-right:auto;
-opacity:0.85;
-}
-
-.hero-buttons{
-margin-top:30px;
+margin:auto;
+opacity:0.9;
 }
 
 /* BOTONES */
 .btn{
-padding:15px 35px;
+padding:14px 34px;
 border-radius:40px;
 border:none;
 cursor:pointer;
@@ -87,18 +84,19 @@ transition:0.3s;
 }
 
 .btn-primary{
-background:#D4A24C;
+background:#C8A24C; /* dorado elegante */
 color:white;
 }
 
 .btn-primary:hover{
 transform:translateY(-3px);
-box-shadow:0 15px 30px rgba(0,0,0,0.3);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 .btn-secondary{
 background:white;
-color:#0F172A;
+color:#1F2937;
+border:1px solid #ddd;
 }
 
 .btn-secondary:hover{
@@ -123,14 +121,10 @@ text-align:center;
 .historia{
 margin-top:20px;
 line-height:1.7;
-color:#cbd5e1;
+color:#4B5563;
 }
 
 /* SERVICIOS */
-.dark-section{
-background:#111827;
-}
-
 .cards{
 margin-top:50px;
 display:grid;
@@ -139,35 +133,41 @@ gap:30px;
 }
 
 .card{
-background:#1F2937;
+background:white;
 padding:40px;
 border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.04);
 transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-background:#273549;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
 }
 
 .card p{
-color:#9CA3AF;
+color:#6B7280;
 margin-top:10px;
 }
 
 /* ICONOS */
 .iconos{
-margin-top:20px;
-font-size:22px;
-opacity:0.8;
+margin-top:18px;
+font-size:20px;
+opacity:0.7;
+}
+
+/* SECCIÓN SUAVE (COLOR AGRADABLE) */
+.soft-section{
+background:#F9F6EF; /* beige vivo elegante */
 }
 
 /* FOOTER */
 footer{
-background:#020617;
+background:#1F2937;
+color:white;
 text-align:center;
 padding:40px;
-margin-top:40px;
 }
 
 /* WHATSAPP */
@@ -176,7 +176,7 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-padding:18px;
+padding:16px;
 border-radius:50%;
 color:white;
 font-size:22px;
