@@ -7,206 +7,15 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<style>
-
-/* BASE */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-html{scroll-behavior:smooth;}
-
-body{
-background:#F7F7F7;
-color:#1F4422;
-}
-
-/* NAV */
-header{
-position:fixed;
-width:100%;
-background:white;
-padding:15px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #eee;
-z-index:1000;
-}
-
-.logo{
-height:55px;
-padding:5px 10px;
-background:white;
-border-radius:8px;
-}
-
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-nav a:hover{
-color:#D4A24C;
-}
-
-/* HERO */
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.hero h1{
-font-size:56px;
-font-weight:600;
-}
-
-.hero p{
-margin-top:20px;
-max-width:600px;
-margin:auto;
-opacity:0.9;
-}
-
-/* BOTONES */
-.btn{
-margin-top:25px;
-padding:14px 35px;
-border-radius:40px;
-border:none;
-cursor:pointer;
-font-weight:500;
-transition:0.3s;
-}
-
-.btn-primary{
-background:#D4A24C;
-color:white;
-}
-
-.btn-primary:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-.btn-secondary{
-background:white;
-color:#1F4422;
-}
-
-.btn-secondary:hover{
-transform:translateY(-3px);
-}
-
-/* SECCIONES */
-section{padding:120px 80px;}
-
-.title{
-text-align:center;
-margin-bottom:60px;
-}
-
-.title h2{
-font-size:36px;
-}
-
-/* ANIMACIÓN */
-.fade{
-opacity:0;
-transform:translateY(40px);
-transition:1s;
-}
-.fade.active{
-opacity:1;
-transform:translateY(0);
-}
-
-/* HISTORIA */
-.historia{
-max-width:800px;
-margin:auto;
-text-align:center;
-font-size:18px;
-color:#444;
-line-height:1.6;
-}
-
-/* SERVICIOS */
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-/* BANNER */
-.banner{
-height:450px;
-border-radius:20px;
-background:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399') center/cover no-repeat;
-}
-
-/* CONTACTO */
-.contacto{
-text-align:center;
-}
-
-/* FOOTER */
-footer{
-background:#1F4422;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:16px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-section{padding:80px 20px;}
-.hero h1{font-size:30px;}
-}
-
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header>
+<div class="logo-container">
 <img src="logo.png" class="logo">
+</div>
 
 <nav>
 <a href="#inicio">Inicio</a>
@@ -218,85 +27,90 @@ section{padding:80px 20px;}
 
 <!-- HERO -->
 <section id="inicio" class="hero">
-<div>
-<h1>Sembramos con fe, crecemos con propósito</h1>
-<p>Agroindustria moderna basada en familia, sostenibilidad y visión de futuro.</p>
+<div class="hero-content">
+<h1>Sembramos con fe,<br>crecemos con propósito</h1>
 
+<p>
+Agroindustria moderna que integra tradición,
+familia y sostenibilidad con visión de futuro.
+</p>
+
+<div class="hero-buttons">
 <a href="#servicios">
 <button class="btn btn-primary">Explorar servicios</button>
 </a>
 
 <a href="https://wa.me/573150482093" target="_blank">
-<button class="btn btn-secondary">Hablar por WhatsApp</button>
+<button class="btn btn-secondary">WhatsApp</button>
 </a>
+</div>
 </div>
 </section>
 
 <!-- HISTORIA -->
 <section id="historia" class="fade">
-<div class="title"><h2>Nuestra Historia</h2></div>
+<div class="container">
+<h2>Nuestra Historia</h2>
 
-<div class="historia">
-EDELROS Agrointegral nace como un proyecto familiar con raíces profundas en el campo,
-guiado por la fe, el amor y el compromiso con la tierra.
+<p class="historia">
+EDELROS nace desde el legado familiar, inspirado en generaciones
+que trabajaron la tierra con esfuerzo, fe y amor por el campo.
 
-Trabajamos para transformar la agroindustria mediante prácticas sostenibles,
-integrando tradición, conocimiento y visión empresarial para generar crecimiento real.
+Hoy proyectamos ese origen hacia el futuro, integrando tradición,
+conocimiento y visión empresarial para construir una agroindustria sólida,
+sostenible y en crecimiento.
+</p>
 </div>
 </section>
 
 <!-- SERVICIOS -->
-<section id="servicios" class="fade">
-<div class="title"><h2>Servicios</h2></div>
+<section id="servicios" class="fade dark-section">
+<div class="container">
+<h2>Servicios</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>🌱 Producción Agropecuaria</h3>
-<p>Sistemas productivos agrícolas y pecuarios sostenibles.</p>
+<h3>Producción Agropecuaria</h3>
+<p>Sistemas sostenibles que combinan eficiencia, calidad y respeto por la tierra.</p>
 </div>
 
 <div class="card">
-<h3>🐄 Manejo de Especies</h3>
-<p>Gestión técnica de ganado y otras especies productivas.</p>
+<h3>Manejo de Especies</h3>
+<p>Gestión técnica de diversas especies bajo bienestar animal y productividad responsable.</p>
+<div class="iconos">🐄 🐑 🐖 🐓</div>
 </div>
 
 <div class="card">
-<h3>📦 Comercialización</h3>
-<p>Conexión estratégica entre el campo y el mercado.</p>
+<h3>Comercialización Estratégica</h3>
+<p>Conectamos la producción rural con oportunidades reales de mercado.</p>
 </div>
 
 <div class="card">
-<h3>📚 Formación Rural</h3>
-<p>Capacitación para el desarrollo productivo y empresarial.</p>
+<h3>Formación y Desarrollo Rural</h3>
+<p>Impulsamos el crecimiento del campo con conocimiento y visión empresarial.</p>
 </div>
 
 </div>
-</section>
-
-<!-- IMAGEN -->
-<section class="fade">
-<div class="banner"></div>
+</div>
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto" class="contacto fade">
-<div class="title"><h2>Contacto</h2></div>
+<section id="contacto" class="fade">
+<div class="container center">
+<h2>Contacto</h2>
 
 <p>Conéctate con nosotros directamente</p>
 
-<div style="margin-top:20px;">
 <a href="https://wa.me/573150482093" target="_blank">
-<button class="btn btn-primary">WhatsApp</button>
+<button class="btn btn-primary">Escribir por WhatsApp</button>
 </a>
-</div>
 
-<div style="margin-top:15px;">
 <a href="https://www.instagram.com/edelros_agrointegral" target="_blank">
 <button class="btn btn-secondary">Instagram</button>
 </a>
-</div>
 
+</div>
 </section>
 
 <footer>
