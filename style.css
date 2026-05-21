@@ -6,8 +6,8 @@
 }
 
 body {
-  background: #f5f1e8;
-  color: #2e2e2e;
+  background: #f8f8f5;
+  color: #222;
 }
 
 /* HEADER */
@@ -15,48 +15,74 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 20px 80px;
   background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo img {
-  height: 65px;
+  height: 70px;
+}
+
+.logo span {
+  font-weight: bold;
+  color: #1f3d2b;
 }
 
 /* NAV */
 nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
   color: #333;
+  font-weight: 500;
 }
 
 /* BOTON */
 .btn {
-  background: #2f4f2f;
+  background: #1f3d2b;
   color: white;
-  padding: 10px 15px;
+  padding: 10px 18px;
   border-radius: 6px;
+  font-weight: 600;
 }
 
 /* HERO */
 .hero {
   height: 90vh;
-  background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') center/cover;
+  background: url('https://images.unsplash.com/photo-1598514982846-0b5c7e3f94a6') center/cover;
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
   color: white;
   text-align: center;
 }
 
 /* SECCIONES */
 .section {
-  padding: 60px 30px;
+  padding: 70px 40px;
   text-align: center;
 }
 
 h2 {
-  color: #2f4f2f;
+  color: #1f3d2b;
   margin-bottom: 20px;
 }
 
@@ -70,16 +96,25 @@ h2 {
 
 .card {
   background: white;
-  padding: 20px;
-  width: 220px;
-  border-radius: 8px;
+  padding: 25px;
+  width: 240px;
+  border-radius: 10px;
   border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* DARK */
 .dark {
-  background: #2f4f2f;
+  background: #1f3d2b;
   color: white;
+}
+
+.dark h2 {
+  color: #d4af37;
 }
 
 /* VALORES */
@@ -91,38 +126,15 @@ h2 {
 
 /* CONTACTO */
 .contacto a {
-  display: inline-block;
-  margin: 10px;
-  color: #2f4f2f;
-}
-
-/* FORM */
-form {
-  max-width: 400px;
-  margin: auto;
-}
-
-input, textarea {
-  width: 100%;
-  margin: 8px 0;
-  padding: 10px;
-}
-
-button {
-  background: #2f4f2f;
-  color: white;
-  padding: 10px;
-  border: none;
+  font-size: 30px;
+  margin: 15px;
+  color: #1f3d2b;
 }
 
 /* FOOTER */
 footer {
-  background: #222;
+  background: #1f3d2b;
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-footer span {
-  font-size: 12px;
 }
