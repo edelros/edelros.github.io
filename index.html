@@ -15,13 +15,14 @@ html{scroll-behavior:smooth;}
 
 :root{
 --rojo:#C0392B;
---gris:#1F2937;
---claro:#F9FAFB;
+--oscuro:#0F172A;
+--gris:#6B7280;
+--claro:#F8FAFC;
 }
 
 body{
 background:white;
-color:var(--gris);
+color:#1F2937;
 }
 
 /* NAV */
@@ -29,7 +30,7 @@ header{
 position:fixed;
 width:100%;
 background:white;
-padding:25px 90px;
+padding:20px 80px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -38,7 +39,7 @@ z-index:1000;
 }
 
 .logo{
-height:110px; /* 🔥 PROTAGONISTA REAL */
+height:120px; /* 🔥 PROTAGONISTA REAL */
 }
 
 /* MENU */
@@ -48,50 +49,60 @@ text-decoration:none;
 color:#374151;
 font-weight:500;
 font-size:15px;
+transition:0.3s;
 }
 
 nav a:hover{
 color:var(--rojo);
 }
 
-/* HERO */
+/* HERO PRO */
 .hero{
+display:grid;
+grid-template-columns:1fr 1fr;
 height:100vh;
+}
+
+.hero-text{
 display:flex;
-align-items:center;
+flex-direction:column;
 justify-content:center;
-text-align:center;
-color:white;
-background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
-url('https://images.unsplash.com/photo-1598514983318-2f64f8f4796c') center/cover;
+padding:0 90px;
 }
 
-.hero h1{
-font-size:82px;
-letter-spacing:-2px;
+.hero-text h1{
+font-size:72px;
+line-height:1.05;
+letter-spacing:-1px;
 }
 
-.hero p{
+.hero-text p{
 margin-top:15px;
-font-size:20px;
-opacity:0.9;
+font-size:18px;
+color:var(--gris);
 }
 
 .line{
-width:80px;
+width:70px;
 height:3px;
 background:var(--rojo);
-margin:20px auto;
+margin:20px 0;
+}
+
+.hero-img{
+background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') center/cover;
 }
 
 /* BOTONES */
 .btn{
-padding:15px 40px;
+padding:14px 36px;
 border-radius:40px;
 border:none;
 cursor:pointer;
-margin:10px;
 font-weight:500;
+margin-top:20px;
+transition:0.3s;
 }
 
 .btn-primary{
@@ -99,15 +110,26 @@ background:var(--rojo);
 color:white;
 }
 
+.btn-primary:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
 .btn-secondary{
 background:white;
-color:var(--rojo);
 border:2px solid var(--rojo);
+color:var(--rojo);
+margin-left:10px;
+}
+
+.btn-secondary:hover{
+background:var(--rojo);
+color:white;
 }
 
 /* SECCIONES */
 section{
-padding:140px 90px;
+padding:150px 90px;
 }
 
 .container{
@@ -119,19 +141,19 @@ margin:auto;
 
 h2{
 font-size:42px;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 /* HISTORIA */
-.historia{
-font-size:18px;
-line-height:1.7;
-color:#4B5563;
+.historia-text{
 max-width:750px;
 margin:auto;
+font-size:18px;
+line-height:1.8;
+color:var(--gris);
 }
 
-/* SERVICIOS */
+/* SERVICIOS PRO */
 .servicios{
 background:var(--claro);
 }
@@ -140,61 +162,56 @@ background:var(--claro);
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
-margin-top:60px;
+margin-top:70px;
 }
 
 .card{
 background:white;
-padding:40px;
+padding:45px;
 border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,0.05);
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
 transition:0.4s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 25px 50px rgba(0,0,0,0.1);
+box-shadow:0 25px 60px rgba(0,0,0,0.12);
 }
 
-.card h3{
-margin-bottom:10px;
-}
-
-.card p{
-color:#6B7280;
-}
-
-.card button{
-margin-top:15px;
+.icon{
+font-size:26px;
+margin-bottom:15px;
+opacity:0.8;
 }
 
 /* VALORES */
 .valores li{
 list-style:none;
-margin:10px 0;
+margin:8px 0;
 }
 
 /* CONTACTO */
 .contacto{
-background:#111827;
+background:var(--oscuro);
 color:white;
 }
 
-/* REDES */
+/* REDES PRO */
 .redes{
-margin-top:20px;
+margin-top:25px;
 }
 
 .redes a{
 display:inline-block;
 margin:0 8px;
-width:40px;
-height:40px;
-line-height:40px;
+width:42px;
+height:42px;
+line-height:42px;
 border-radius:50%;
 background:white;
 color:var(--rojo);
 text-align:center;
+font-weight:600;
 text-decoration:none;
 transition:0.3s;
 }
@@ -202,14 +219,15 @@ transition:0.3s;
 .redes a:hover{
 background:var(--rojo);
 color:white;
+transform:translateY(-3px);
 }
 
 /* FOOTER */
 footer{
-text-align:center;
-padding:25px;
 background:black;
 color:white;
+text-align:center;
+padding:25px;
 }
 
 /* WHATSAPP */
@@ -225,22 +243,31 @@ text-decoration:none;
 }
 
 /* RESPONSIVE */
-@media(max-width:768px){
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero-text{
+padding:40px;
+text-align:center;
+}
+
+.hero-img{
+height:300px;
+}
 
 header{
 padding:15px 20px;
 }
 
 .logo{
-height:75px;
-}
-
-.hero h1{
-font-size:38px;
+height:80px;
 }
 
 section{
-padding:80px 20px;
+padding:90px 20px;
 }
 
 }
@@ -264,23 +291,22 @@ padding:80px 20px;
 
 <!-- HERO -->
 <section id="inicio" class="hero">
-<div>
 
+<div class="hero-text">
 <h1>EDELROS</h1>
 
 <div class="line"></div>
 
 <p>Sembramos con fe, crecemos con propósito</p>
 
-<a href="#servicios">
-<button class="btn btn-primary">Explorar servicios</button>
-</a>
-
-<a href="https://wa.me/573150482093" target="_blank">
-<button class="btn btn-secondary">Contáctanos</button>
-</a>
-
+<div>
+<a href="#servicios"><button class="btn btn-primary">Explorar</button></a>
+<a href="https://wa.me/573150482093"><button class="btn btn-secondary">Contacto</button></a>
 </div>
+</div>
+
+<div class="hero-img"></div>
+
 </section>
 
 <!-- HISTORIA -->
@@ -289,18 +315,18 @@ padding:80px 20px;
 
 <h2>Nuestra Historia</h2>
 
-<p style="font-size:20px;color:#6B7280;">
+<p style="font-size:20px;color:var(--gris);">
 Sembramos con fe, crecemos con propósito.
 </p>
 
-<div class="line"></div>
+<div class="line" style="margin:auto;"></div>
 
-<p class="historia">
+<p class="historia-text">
 Nuestra historia nace del esfuerzo y la constancia de una familia que encontró en el trabajo diario el camino para construir un futuro.
 
 Desde el campo, donde generaciones anteriores sembraron con disciplina y amor por la tierra, hasta una nueva etapa impulsada por el conocimiento, el trabajo y la visión, EDELROS representa la unión entre la tradición y la evolución.
 
-Hoy transformamos ese legado en una agroindustria moderna, guiada por principios sólidos, compromiso familiar y una proyección clara.
+Hoy transformamos ese legado en una agroindustria moderna, con identidad, propósito y proyección.
 </p>
 
 </div>
@@ -315,27 +341,27 @@ Hoy transformamos ese legado en una agroindustria moderna, guiada por principios
 <div class="cards">
 
 <div class="card">
-<h3>🌱 Producción Agroindustrial</h3>
-<p>Modelos productivos eficientes y sostenibles.</p>
-<button class="btn btn-secondary">Ver más</button>
+<div class="icon">🌱</div>
+<h3>Producción Agroindustrial</h3>
+<p>Sistemas eficientes y sostenibles.</p>
 </div>
 
 <div class="card">
-<h3>🐄 Manejo de Especies</h3>
-<p>Gestión técnica de múltiples especies con bienestar.</p>
-<button class="btn btn-secondary">Ver más</button>
+<div class="icon">🐄</div>
+<h3>Manejo de Especies</h3>
+<p>Gestión técnica con bienestar.</p>
 </div>
 
 <div class="card">
-<h3>🚚 Comercialización</h3>
-<p>Conectamos el campo con mercados reales.</p>
-<button class="btn btn-secondary">Ver más</button>
+<div class="icon">🚚</div>
+<h3>Comercialización</h3>
+<p>Conectamos con mercados reales.</p>
 </div>
 
 <div class="card">
-<h3>📚 Formación Rural</h3>
-<p>Impulsamos conocimiento y crecimiento agro.</p>
-<button class="btn btn-secondary">Ver más</button>
+<div class="icon">📚</div>
+<h3>Formación Rural</h3>
+<p>Impulsamos crecimiento agro.</p>
 </div>
 
 </div>
@@ -347,17 +373,17 @@ Hoy transformamos ese legado en una agroindustria moderna, guiada por principios
 <div class="container center">
 
 <h2>Misión</h2>
-<p>Desarrollar soluciones agroindustriales sostenibles que integren tradición, conocimiento y crecimiento.</p>
+<p>Desarrollar soluciones agroindustriales sostenibles con identidad y crecimiento.</p>
 
 <h2 style="margin-top:40px;">Visión</h2>
-<p>Ser una empresa agroindustrial reconocida por su calidad, innovación y compromiso con el campo.</p>
+<p>Ser una empresa agroindustrial moderna con impacto regional y nacional.</p>
 
 <h2 style="margin-top:40px;">Valores</h2>
 
 <ul class="valores">
-<li>🌱 Compromiso con la tierra</li>
-<li>🤝 Trabajo en familia</li>
-<li>📈 Crecimiento con propósito</li>
+<li>🌱 Compromiso</li>
+<li>🤝 Familia</li>
+<li>📈 Crecimiento</li>
 <li>🌍 Sostenibilidad</li>
 <li>💡 Innovación</li>
 </ul>
@@ -371,11 +397,11 @@ Hoy transformamos ese legado en una agroindustria moderna, guiada por principios
 
 <h2>Contáctanos</h2>
 
-<a href="https://wa.me/573150482093" target="_blank">
+<a href="https://wa.me/573150482093">
 <button class="btn btn-primary">WhatsApp</button>
 </a>
 
-<a href="https://www.instagram.com/edelros_agrointegral" target="_blank">
+<a href="https://www.instagram.com/edelros_agrointegral">
 <button class="btn btn-secondary">Instagram</button>
 </a>
 
