@@ -5,274 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EDELROS Agrointegral</title>
 
+<link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<style>
-
-/* RESET */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-html{scroll-behavior:smooth;}
-
-:root{
---rojo:#C0392B;
---oscuro:#0F172A;
---gris:#6B7280;
---claro:#F8FAFC;
-}
-
-body{
-background:white;
-color:#1F2937;
-}
-
-/* NAV */
-header{
-position:fixed;
-width:100%;
-background:white;
-padding:20px 80px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #eee;
-z-index:1000;
-}
-
-.logo{
-height:120px; /* 🔥 PROTAGONISTA REAL */
-}
-
-/* MENU */
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#374151;
-font-weight:500;
-font-size:15px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:var(--rojo);
-}
-
-/* HERO PRO */
-.hero{
-display:grid;
-grid-template-columns:1fr 1fr;
-height:100vh;
-}
-
-.hero-text{
-display:flex;
-flex-direction:column;
-justify-content:center;
-padding:0 90px;
-}
-
-.hero-text h1{
-font-size:72px;
-line-height:1.05;
-letter-spacing:-1px;
-}
-
-.hero-text p{
-margin-top:15px;
-font-size:18px;
-color:var(--gris);
-}
-
-.line{
-width:70px;
-height:3px;
-background:var(--rojo);
-margin:20px 0;
-}
-
-.hero-img{
-background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') center/cover;
-}
-
-/* BOTONES */
-.btn{
-padding:14px 36px;
-border-radius:40px;
-border:none;
-cursor:pointer;
-font-weight:500;
-margin-top:20px;
-transition:0.3s;
-}
-
-.btn-primary{
-background:var(--rojo);
-color:white;
-}
-
-.btn-primary:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-.btn-secondary{
-background:white;
-border:2px solid var(--rojo);
-color:var(--rojo);
-margin-left:10px;
-}
-
-.btn-secondary:hover{
-background:var(--rojo);
-color:white;
-}
-
-/* SECCIONES */
-section{
-padding:150px 90px;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-}
-
-.center{text-align:center;}
-
-h2{
-font-size:42px;
-margin-bottom:10px;
-}
-
-/* HISTORIA */
-.historia-text{
-max-width:750px;
-margin:auto;
-font-size:18px;
-line-height:1.8;
-color:var(--gris);
-}
-
-/* SERVICIOS PRO */
-.servicios{
-background:var(--claro);
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-margin-top:70px;
-}
-
-.card{
-background:white;
-padding:45px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.05);
-transition:0.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 25px 60px rgba(0,0,0,0.12);
-}
-
-.icon{
-font-size:26px;
-margin-bottom:15px;
-opacity:0.8;
-}
-
-/* VALORES */
-.valores li{
-list-style:none;
-margin:8px 0;
-}
-
-/* CONTACTO */
-.contacto{
-background:var(--oscuro);
-color:white;
-}
-
-/* REDES PRO */
-.redes{
-margin-top:25px;
-}
-
-.redes a{
-display:inline-block;
-margin:0 8px;
-width:42px;
-height:42px;
-line-height:42px;
-border-radius:50%;
-background:white;
-color:var(--rojo);
-text-align:center;
-font-weight:600;
-text-decoration:none;
-transition:0.3s;
-}
-
-.redes a:hover{
-background:var(--rojo);
-color:white;
-transform:translateY(-3px);
-}
-
-/* FOOTER */
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px;
-border-radius:50%;
-color:white;
-text-decoration:none;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-
-.hero{
-grid-template-columns:1fr;
-}
-
-.hero-text{
-padding:40px;
-text-align:center;
-}
-
-.hero-img{
-height:300px;
-}
-
-header{
-padding:15px 20px;
-}
-
-.logo{
-height:80px;
-}
-
-section{
-padding:90px 20px;
-}
-
-}
-
-</style>
 </head>
 
 <body>
@@ -291,22 +26,25 @@ padding:90px 20px;
 
 <!-- HERO -->
 <section id="inicio" class="hero">
+<div class="hero-content">
 
-<div class="hero-text">
 <h1>EDELROS</h1>
-
-<div class="line"></div>
-
 <p>Sembramos con fe, crecemos con propósito</p>
 
-<div>
-<a href="#servicios"><button class="btn btn-primary">Explorar</button></a>
-<a href="https://wa.me/573150482093"><button class="btn btn-secondary">Contacto</button></a>
-</div>
+<div class="hero-buttons">
+<a href="#servicios"><button class="btn btn-primary">Explorar servicios</button></a>
+<a href="https://wa.me/573150482093"><button class="btn btn-secondary">Contáctanos</button></a>
 </div>
 
-<div class="hero-img"></div>
+</div>
+</section>
 
+<!-- BLOQUE MARCA -->
+<section class="marca">
+<h2>Una agroindustria con propósito y visión</h2>
+<p>
+Integramos tradición familiar, conocimiento técnico y visión empresarial para desarrollar un modelo agroindustrial sostenible, rentable y con proyección a largo plazo.
+</p>
 </section>
 
 <!-- HISTORIA -->
@@ -314,19 +52,14 @@ padding:90px 20px;
 <div class="container center">
 
 <h2>Nuestra Historia</h2>
-
-<p style="font-size:20px;color:var(--gris);">
-Sembramos con fe, crecemos con propósito.
-</p>
-
-<div class="line" style="margin:auto;"></div>
+<p class="sub">Sembramos con fe, crecemos con propósito.</p>
 
 <p class="historia-text">
-Nuestra historia nace del esfuerzo y la constancia de una familia que encontró en el trabajo diario el camino para construir un futuro.
+Nuestra historia nace del trabajo constante de una familia profundamente conectada con el campo, donde el esfuerzo, la disciplina y los valores han guiado cada paso.
 
-Desde el campo, donde generaciones anteriores sembraron con disciplina y amor por la tierra, hasta una nueva etapa impulsada por el conocimiento, el trabajo y la visión, EDELROS representa la unión entre la tradición y la evolución.
+Desde generaciones que cultivaron la tierra con dedicación, hasta una nueva etapa impulsada por la educación, la logística y la visión empresarial, EDELROS representa la evolución del legado familiar hacia una agroindustria moderna.
 
-Hoy transformamos ese legado en una agroindustria moderna, con identidad, propósito y proyección.
+Hoy construimos una empresa con identidad, propósito claro y proyección de crecimiento sostenible.
 </p>
 
 </div>
@@ -341,27 +74,23 @@ Hoy transformamos ese legado en una agroindustria moderna, con identidad, propó
 <div class="cards">
 
 <div class="card">
-<div class="icon">🌱</div>
 <h3>Producción Agroindustrial</h3>
-<p>Sistemas eficientes y sostenibles.</p>
+<p>Desarrollamos sistemas productivos eficientes, sostenibles y orientados a la rentabilidad del campo.</p>
 </div>
 
 <div class="card">
-<div class="icon">🐄</div>
 <h3>Manejo de Especies</h3>
-<p>Gestión técnica con bienestar.</p>
+<p>Gestión integral de diversas especies con enfoque técnico, bienestar animal y productividad responsable.</p>
 </div>
 
 <div class="card">
-<div class="icon">🚚</div>
 <h3>Comercialización</h3>
-<p>Conectamos con mercados reales.</p>
+<p>Conectamos la producción rural con mercados estratégicos, generando valor y oportunidades reales.</p>
 </div>
 
 <div class="card">
-<div class="icon">📚</div>
 <h3>Formación Rural</h3>
-<p>Impulsamos crecimiento agro.</p>
+<p>Impulsamos el conocimiento y la capacitación para fortalecer el desarrollo empresarial del campo.</p>
 </div>
 
 </div>
@@ -373,19 +102,22 @@ Hoy transformamos ese legado en una agroindustria moderna, con identidad, propó
 <div class="container center">
 
 <h2>Misión</h2>
-<p>Desarrollar soluciones agroindustriales sostenibles con identidad y crecimiento.</p>
+<p>
+Desarrollar soluciones agroindustriales sostenibles, eficientes y rentables, integrando tradición, conocimiento y compromiso con el crecimiento del sector rural.
+</p>
 
-<h2 style="margin-top:40px;">Visión</h2>
-<p>Ser una empresa agroindustrial moderna con impacto regional y nacional.</p>
+<h2>Visión</h2>
+<p>
+Ser una empresa agroindustrial referente a nivel regional y nacional, reconocida por su innovación, sostenibilidad y capacidad de transformar el campo en oportunidades de desarrollo.
+</p>
 
-<h2 style="margin-top:40px;">Valores</h2>
-
+<h2>Valores</h2>
 <ul class="valores">
-<li>🌱 Compromiso</li>
-<li>🤝 Familia</li>
-<li>📈 Crecimiento</li>
-<li>🌍 Sostenibilidad</li>
-<li>💡 Innovación</li>
+<li>Compromiso con el crecimiento</li>
+<li>Respeto por la tierra y el entorno</li>
+<li>Trabajo en familia y equipo</li>
+<li>Disciplina y responsabilidad</li>
+<li>Innovación con propósito</li>
 </ul>
 
 </div>
