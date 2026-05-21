@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #f8f8f5;
+  background: #f7f7f4;
   color: #222;
 }
 
@@ -17,21 +17,22 @@ header {
   align-items: center;
   padding: 20px 80px;
   background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .logo img {
-  height: 70px;
+  height: 80px;
 }
 
 .logo span {
   font-weight: bold;
+  font-size: 20px;
   color: #1f3d2b;
 }
 
@@ -43,13 +44,20 @@ nav a {
   font-weight: 500;
 }
 
-/* BOTON */
+/* BOTONES */
 .btn {
   background: #1f3d2b;
   color: white;
   padding: 10px 18px;
   border-radius: 6px;
   font-weight: 600;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  margin-left: 10px;
 }
 
 /* HERO */
@@ -73,6 +81,10 @@ nav a {
   position: relative;
   color: white;
   text-align: center;
+}
+
+.hero-buttons {
+  margin-top: 20px;
 }
 
 /* SECCIONES */
