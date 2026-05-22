@@ -45,14 +45,20 @@
 </section>
 
 <!-- PROPOSITO -->
-<section>
+<section id="proposito">
   <h2>Propósito</h2>
 
-  <p class="center">
-    Creemos en el campo como una oportunidad real de transformación. Trabajamos desde lo que tienes hoy para construir algo que crezca mañana, generando desarrollo, oportunidades y crecimiento sostenible.
-    <br><br>
-    “Crecer con propósito es honrar de dónde venimos y construir hacia dónde vamos.”
-  </p>
+  <div class="grid">
+    <div>
+      <p>
+        Creemos en el campo como una oportunidad real de transformación. Trabajamos desde lo que tienes hoy para construir algo que crezca mañana, generando desarrollo, oportunidades y crecimiento sostenible.
+        <br><br>
+        “Crecer con propósito es honrar de dónde venimos y construir hacia dónde vamos.”
+      </p>
+    </div>
+
+    <img src="realidad.png" class="img-pro">
+  </div>
 </section>
 
 <!-- SERVICIOS -->
@@ -61,27 +67,27 @@
 
   <div class="servicios">
 
-    <div class="card" style="background-image:url('https://images.unsplash.com/photo-tractor-field');">
+    <div class="card">
       <h3>Producción agro y pecuaria</h3>
       <p>Procesos productivos enfocados en generar valor real desde la tierra.</p>
     </div>
 
-    <div class="card" style="background-image:url('https://images.unsplash.com/photo-livestock');">
+    <div class="card">
       <h3>Manejo de especies</h3>
       <p>Gestión eficiente y sostenible adaptada a cada contexto.</p>
     </div>
 
-    <div class="card" style="background-image:url('https://images.unsplash.com/photo-agriculture-learning');">
+    <div class="card">
       <h3>Formación rural</h3>
       <p>Capacitaciones prácticas y académicas para mejorar decisiones y resultados.</p>
     </div>
 
-    <div class="card" style="background-image:url('https://images.unsplash.com/photo-farm-project');">
+    <div class="card">
       <h3>Asesorías y proyectos</h3>
       <p>Estructuración de ideas que se convierten en ingresos reales y sostenibles.</p>
     </div>
 
-    <div class="card" style="background-image:url('https://images.unsplash.com/photo-sustainable-farming');">
+    <div class="card">
       <h3>Sostenibilidad</h3>
       <p>Producción responsable que equilibra crecimiento, entorno y futuro.</p>
     </div>
@@ -123,12 +129,42 @@
   <h2>Valores</h2>
 
   <div class="valores">
-    <div class="valor"><i class="fas fa-seedling"></i> Fe</div>
-    <div class="valor"><i class="fas fa-bullseye"></i> Trabajo con propósito</div>
-    <div class="valor"><i class="fas fa-leaf"></i> Amor por la tierra</div>
-    <div class="valor"><i class="fas fa-users"></i> Crecimiento compartido</div>
-    <div class="valor"><i class="fas fa-mountain"></i> Fuerza y constancia</div>
-    <div class="valor"><i class="fas fa-eye"></i> Visión</div>
+    <div class="valor">
+      <i class="fas fa-seedling"></i>
+      <h4>Fe</h4>
+      <p>Creemos en lo que construimos.</p>
+    </div>
+
+    <div class="valor">
+      <i class="fas fa-bullseye"></i>
+      <h4>Trabajo con propósito</h4>
+      <p>Cada acción tiene dirección.</p>
+    </div>
+
+    <div class="valor">
+      <i class="fas fa-leaf"></i>
+      <h4>Amor por la tierra</h4>
+      <p>Es nuestro origen y oportunidad.</p>
+    </div>
+
+    <div class="valor">
+      <i class="fas fa-users"></i>
+      <h4>Crecimiento compartido</h4>
+      <p>Nadie crece solo, avanzamos juntos.</p>
+    </div>
+
+    <div class="valor">
+      <i class="fas fa-mountain"></i>
+      <h4>Fuerza y constancia</h4>
+      <p>Persistimos con disciplina, seguimos incluso en los desafíos.</p>
+    </div>
+
+    <div class="valor">
+      <i class="fas fa-eye"></i>
+      <h4>Visión</h4>
+      <p>Construimos pensando en el futuro.</p>
+    </div>
+
   </div>
 </section>
 
@@ -152,9 +188,6 @@
     <input type="tel" name="telefono" placeholder="Teléfono" required>
     <input type="email" name="email" placeholder="Correo" required>
     <textarea name="mensaje" placeholder="Mensaje"></textarea>
-
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://edelros.github.io/">
 
     <button type="submit">Enviar información</button>
   </form>
