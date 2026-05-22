@@ -17,25 +17,31 @@ header {
 }
 
 .logo {
-  height: 65px;
+  height: 70px;
 }
 
+/* NAV */
 nav a {
   margin: 0 12px;
   text-decoration: none;
   color: #1f3d2b;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #2f5d3a;
 }
 
 /* HERO */
 .hero {
-  height: 85vh;
+  height: 70vh;
   background: url('guachucal.png') center/cover no-repeat;
 }
 
 .overlay {
   height: 100%;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.55);
   color: white;
   display: flex;
   flex-direction: column;
@@ -43,19 +49,14 @@ nav a {
   align-items: center;
 }
 
-.sub {
-  opacity: 0.8;
-  font-size: 0.9rem;
-}
-
 /* SECCIONES */
 section {
-  padding: 70px 40px;
+  padding: 90px 40px;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .center {
@@ -66,7 +67,7 @@ h2 {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 50px;
   align-items: center;
 }
 
@@ -75,11 +76,22 @@ h2 {
   border-radius: 15px;
 }
 
+/* MOVIMIENTO IMÁGENES */
+.img-move {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateX(0px); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0px); }
+}
+
 /* SERVICIOS */
 .servicios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
@@ -87,15 +99,33 @@ h2 {
   padding: 20px;
   border-radius: 15px;
   transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 
-.card img {
+/* CARD CON IMAGEN PRO */
+.card-img {
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.card-img .img-bg {
+  position: absolute;
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
+  background: url('tractor.png') center/cover;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.card-img h3,
+.card-img p {
+  position: relative;
+  z-index: 2;
 }
 
 /* VALORES */
@@ -107,14 +137,14 @@ h2 {
 
 .valor {
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
-  border-top: 4px solid #1f3d2b;
+  border-left: 5px solid #2f5d3a;
   transition: 0.3s;
 }
 
 .valor:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 /* CONTACTO */
@@ -126,12 +156,12 @@ h2 {
 .redes {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 25px;
+  margin-bottom: 25px;
 }
 
 .redes a {
-  font-size: 28px;
+  font-size: 30px;
   color: white;
   transition: 0.3s;
 }
@@ -143,23 +173,24 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
+  gap: 12px;
+  max-width: 420px;
   margin: auto;
 }
 
 input, textarea {
-  padding: 10px;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 8px;
   border: none;
 }
 
 button {
   background: #2f5d3a;
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 /* FOOTER */
@@ -167,7 +198,7 @@ footer {
   background: #1f3d2b;
   color: white;
   text-align: center;
-  padding: 25px;
+  padding: 30px;
 }
 
 .mini {
@@ -175,16 +206,27 @@ footer {
   opacity: 0.7;
 }
 
-/* ANIMACIÓN SUAVE */
-.fade {
+/* ANIMACIONES ENTRADA */
+.fade-up {
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeIn 1s forwards;
+  animation: fadeUp 1s forwards;
 }
 
-@keyframes fadeIn {
+.delay {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
