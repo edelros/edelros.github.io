@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>EDELROS</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>EDELROS</title>
+<link rel="stylesheet" href="style.css">
 
-  <!-- ICONOS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -24,10 +23,13 @@
 </header>
 
 <!-- HERO -->
-<section id="inicio" class="hero">
+<section id="inicio" class="hero fade-up">
   <div class="overlay">
-    <h1 class="fade-up">Sembramos con fe, crecemos con propósito</h1>
-    <p class="sub fade-up delay">Edelmira · Jorge · Rosa</p>
+    <h1>Sembramos con fe, crecemos con propósito</h1>
+
+    <p class="descripcion">
+      Transformamos el trabajo del campo en oportunidades reales, construidas desde la tierra, el esfuerzo y la visión.
+    </p>
   </div>
 </section>
 
@@ -38,24 +40,26 @@
   <div class="grid">
     <div>
       <p>
-        EDELROS nace de historias marcadas por el trabajo, la disciplina y la construcción desde cero en el campo.
+        EDELROS nace de historias marcadas por el trabajo, la disciplina y la construcción desde cero en el campo, la ganadería y el comercio.
         Hoy, una nueva generación transforma ese legado en una propuesta que integra conocimiento, experiencia y visión empresarial.
-        <br><br>
+        No heredamos el camino, lo estamos construyendo con propósito, compromiso y dirección.
         Este camino honra el legado de Edelmira, Jorge y Rosa.
       </p>
     </div>
 
-    <img src="guachucal.png" class="img-move">
+    <img src="realidad.png" class="img-move">
   </div>
 </section>
 
-<!-- PROPOSITO -->
+<!-- PROPÓSITO -->
 <section class="fade-up">
   <h2>Propósito</h2>
 
   <p class="center">
     Creemos en el campo como una oportunidad real de transformación.
-    Trabajamos desde lo que tienes hoy para construir crecimiento, desarrollo y nuevas oportunidades.
+    Trabajamos para generar crecimiento, desarrollo y nuevas oportunidades, integrando personas, conocimiento y visión en cada proceso.
+    <br><br>
+    “Crecer con propósito es honrar de dónde venimos y construir hacia dónde vamos.”
   </p>
 </section>
 
@@ -68,27 +72,27 @@
     <div class="card card-img">
       <div class="img-bg"></div>
       <h3>Producción agro y pecuaria</h3>
-      <p>Procesos productivos que generan valor real desde la tierra.</p>
+      <p>Procesos productivos enfocados en generar valor real desde la tierra.</p>
     </div>
 
     <div class="card">
       <h3>Manejo de especies</h3>
-      <p>Gestión eficiente y sostenible.</p>
+      <p>Gestión eficiente y sostenible de diferentes especies.</p>
     </div>
 
     <div class="card">
       <h3>Formación rural</h3>
-      <p>Capacitación práctica y académica.</p>
+      <p>Conocimiento práctico y capacitaciones académicas para mejorar decisiones y resultados.</p>
     </div>
 
     <div class="card">
       <h3>Asesorías y proyectos</h3>
-      <p>Estructuración de ideas que generan ingresos.</p>
+      <p>Estructuración de ideas que generen ingresos reales.</p>
     </div>
 
     <div class="card">
       <h3>Sostenibilidad</h3>
-      <p>Producción con visión de futuro.</p>
+      <p>Equilibrio entre producción, entorno y futuro.</p>
     </div>
 
   </div>
@@ -105,7 +109,7 @@
       <p><strong>Tu punto de partida es suficiente</strong><br>
       Nosotros te ayudamos a transformarlo en crecimiento.</p>
 
-      <p>Trabajamos desde lo que ya tienes y lo convertimos en oportunidades reales.</p>
+      <p>Trabajamos con lo que tienes y lo convertimos en oportunidades reales.</p>
       <p>Experiencia real en el campo, no teoría.</p>
       <p>Compromiso auténtico con tu crecimiento.</p>
     </div>
@@ -131,8 +135,8 @@
   <h2>Contáctanos</h2>
 
   <div class="redes">
-    <a href="https://wa.me/573000000000"><i class="fab fa-whatsapp"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/573150482093"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/edelros_agrointegral?igsh=eTU3NzJlMXRxajd2"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-facebook"></i></a>
   </div>
 
@@ -142,10 +146,10 @@
   </p>
 
   <form action="https://formsubmit.co/edelros1119@gmail.com" method="POST">
-    <input type="text" placeholder="Nombre" required>
-    <input type="tel" placeholder="Teléfono" required>
-    <input type="email" placeholder="Correo" required>
-    <textarea placeholder="Mensaje"></textarea>
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+    <input type="email" name="email" placeholder="Correo" required>
+    <textarea name="mensaje" placeholder="Mensaje"></textarea>
     <button type="submit">Enviar información</button>
   </form>
 </section>
@@ -155,5 +159,20 @@
   <p class="mini">Edelmira · Jorge · Rosa</p>
 </footer>
 
+<!-- SCROLL ANIMATION -->
+<script>
+const elements = document.querySelectorAll('.fade-up');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
 </body>
-</html
+</html>
