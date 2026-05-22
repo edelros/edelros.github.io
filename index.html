@@ -5,11 +5,13 @@
   <title>EDELROS Agrointegral</title>
   <link rel="stylesheet" href="style.css">
 
+  <!-- ICONOS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
   <div class="logo">
     <img src="logo.png" alt="EDELROS">
@@ -65,7 +67,9 @@
     No heredamos el camino, lo estamos construyendo con propósito, compromiso y dirección.
   </p>
 
-  <p class="legado">Edelmira · Jorge · Rosa</p>
+  <p class="legado">
+    En honor al camino construido por Edelmira, Jorge y Rosa.
+  </p>
 </section>
 
 <!-- PROPÓSITO -->
@@ -85,40 +89,43 @@
 
 <!-- SERVICIOS -->
 <section id="servicios" class="section servicios">
-  <h2>Servicios</h2>
 
-  <div class="grid-servicios">
+  <div class="contenedor-servicios">
 
-    <div class="servicio">
-      <h3>Producción agro y pecuaria</h3>
-      <p>Procesos productivos enfocados en generar valor real desde la tierra.</p>
+    <div class="grid-servicios">
+
+      <div class="servicio">
+        <h3>Producción agro y pecuaria</h3>
+        <p>Procesos productivos enfocados en generar valor real desde la tierra.</p>
+      </div>
+
+      <div class="servicio">
+        <h3>Manejo de especies</h3>
+        <p>Gestión eficiente y sostenible adaptada a cada contexto.</p>
+      </div>
+
+      <div class="servicio">
+        <h3>Formación rural</h3>
+        <p>Capacitaciones prácticas y académicas para mejorar decisiones y resultados.</p>
+      </div>
+
+      <div class="servicio">
+        <h3>Asesorías y proyectos</h3>
+        <p>Estructuración de ideas que se convierten en ingresos reales y sostenibles.</p>
+      </div>
+
+      <div class="servicio">
+        <h3>Sostenibilidad</h3>
+        <p>Producción responsable que equilibra crecimiento, entorno y futuro.</p>
+      </div>
+
     </div>
 
-    <div class="servicio">
-      <h3>Manejo de especies</h3>
-      <p>Gestión eficiente y sostenible adaptada a cada contexto.</p>
+    <!-- IMAGEN LATERAL -->
+    <div class="imagen-servicio">
+      <img src="guachucal.png" alt="Campo">
     </div>
 
-    <div class="servicio">
-      <h3>Formación rural</h3>
-      <p>Capacitaciones prácticas y académicas para mejorar decisiones y resultados.</p>
-    </div>
-
-    <div class="servicio">
-      <h3>Asesorías y proyectos</h3>
-      <p>Estructuración de ideas que se convierten en ingresos reales y sostenibles.</p>
-    </div>
-
-    <div class="servicio">
-      <h3>Sostenibilidad</h3>
-      <p>Producción responsable que equilibra crecimiento, entorno y futuro.</p>
-    </div>
-
-  </div>
-
-  <!-- IMAGEN -->
-  <div class="imagen-servicio">
-    <img src="guachucal.png" alt="Campo">
   </div>
 
 </section>
@@ -130,15 +137,10 @@
   <div class="valores-grid">
 
     <div class="valor"><h3>Fe</h3><p>Creemos en lo que construimos.</p></div>
-
     <div class="valor"><h3>Trabajo con propósito</h3><p>Cada acción tiene dirección.</p></div>
-
     <div class="valor"><h3>Amor por la tierra</h3><p>Es nuestro origen y oportunidad.</p></div>
-
     <div class="valor"><h3>Crecimiento compartido</h3><p>Nadie crece solo, avanzamos juntos.</p></div>
-
     <div class="valor"><h3>Fuerza y constancia</h3><p>Persistimos con disciplina, seguimos incluso en los desafíos.</p></div>
-
     <div class="valor"><h3>Visión</h3><p>Construimos pensando en el futuro.</p></div>
 
   </div>
@@ -156,15 +158,18 @@
     </div>
 
     <div class="card">
-      <p>Partimos de tu realidad y la convertimos en oportunidades reales.</p>
+      <i class="fas fa-seedling"></i>
+      <p>Partimos de tu realidad y la convertimos en resultados visibles.</p>
     </div>
 
     <div class="card">
-      <p>Experiencia construida en el campo, aplicada en cada proceso.</p>
+      <i class="fas fa-tractor"></i>
+      <p>Lo que hacemos nace del campo, no de la teoría.</p>
     </div>
 
     <div class="card">
-      <p>Tu crecimiento es también nuestro compromiso.</p>
+      <i class="fas fa-handshake"></i>
+      <p>Nos involucramos en tu proceso como si fuera propio.</p>
     </div>
 
   </div>
@@ -172,20 +177,35 @@
 
 <!-- CONTACTO -->
 <section id="contacto" class="section contacto">
+
   <h2>Contáctanos</h2>
 
-  <p>Déjanos tus datos y te contactamos</p>
+  <p class="intro-contacto">
+    Cuéntanos qué tienes y hacia dónde quieres ir.
+    Te ayudamos a construir el camino.
+  </p>
 
   <div class="redes">
     <a href="https://wa.me/573150482093"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.instagram.com/edelros_agrointegral"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:tuemail@gmail.com"><i class="fas fa-envelope"></i></a>
     <a href="#"><i class="fab fa-facebook"></i></a>
   </div>
 
-  <button class="btn">Enviar información</button>
+  <form class="formulario">
+    <input type="text" placeholder="Nombre">
+    <input type="tel" placeholder="Teléfono">
+    <input type="email" placeholder="Correo">
+    <textarea placeholder="Mensaje"></textarea>
+    <button class="btn">Enviar información</button>
+  </form>
 
-  <p class="footer-frase">Sembramos con fe, crecemos con propósito</p>
 </section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="frase-footer">Sembramos con fe, crecemos con propósito</p>
+  <p class="nombres-footer">Edelmira · Jorge · Rosa</p>
+</footer>
 
 </body>
 </html>
