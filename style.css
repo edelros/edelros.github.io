@@ -9,25 +9,30 @@ a{
   color:inherit;
 }
 
+/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 40px;
+  padding:10px 30px;
   background:white;
 }
 
 .logo{
   height:60px;
+  width:auto;
+  max-width:150px;
 }
 
 nav a{
   margin:0 10px;
+  font-weight:500;
 }
 
+/* HERO */
 .hero{
   height:90vh;
-  background:url('guachucal.png') center/cover;
+  background:url('guachucal.png') center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -41,6 +46,7 @@ nav a{
   border-radius:10px;
 }
 
+/* SECCIONES */
 section{
   padding:80px 40px;
 }
@@ -58,6 +64,7 @@ h2{
   margin:auto;
 }
 
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -71,6 +78,7 @@ h2{
   opacity:0.6;
 }
 
+/* CARDS */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -91,10 +99,12 @@ h2{
   border-radius:10px;
 }
 
+/* VALORES */
 .small .card{
   font-size:14px;
 }
 
+/* CONTACTO */
 .contacto{
   background:#1f3d2b;
   color:white;
@@ -133,6 +143,7 @@ button{
   cursor:pointer;
 }
 
+/* FOOTER */
 footer{
   text-align:center;
   padding:20px;
