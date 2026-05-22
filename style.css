@@ -9,7 +9,6 @@ a{
   color:inherit;
 }
 
-/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
@@ -21,7 +20,7 @@ header{
 .logo{
   height:60px;
   width:auto;
-  max-width:150px;
+  max-width:140px;
 }
 
 nav a{
@@ -64,21 +63,24 @@ h2{
   margin:auto;
 }
 
-/* GRID */
+/* PROPOSITO */
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:30px;
+  gap:40px;
   align-items:center;
 }
 
 .img{
   width:100%;
-  border-radius:10px;
-  opacity:0.6;
+  max-width:400px;
+  border-radius:15px;
+  opacity:0.5;
+  margin:auto;
+  display:block;
 }
 
-/* CARDS */
+/* SERVICIOS */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -102,6 +104,26 @@ h2{
 /* VALORES */
 .small .card{
   font-size:14px;
+}
+
+/* PORQUE */
+.porque-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.porque-card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.porque-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
 /* CONTACTO */
@@ -148,4 +170,11 @@ footer{
   text-align:center;
   padding:20px;
   background:#eee;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .grid{
+    grid-template-columns:1fr;
+  }
 }
