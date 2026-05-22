@@ -16,21 +16,14 @@ header {
   height: 70px;
 }
 
-/* NAV */
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #1f3d2b;
-}
-
 /* HERO */
 .hero {
   height: 75vh;
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
               url('guachucal.png') center/cover;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: white;
 }
@@ -41,32 +34,41 @@ nav a {
 
 /* SECCIONES */
 section {
-  padding: 80px 40px;
+  padding: 90px 60px;
 }
 
 .center {
   text-align: center;
 }
 
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* IMAGEN PROPOSITO */
+.img-pro {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
 /* SERVICIOS */
 .servicios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
-  height: 220px;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 20px;
+  background: white;
+  padding: 25px;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-blend-mode: darken;
-  background-color: rgba(0,0,0,0.4);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
   transition: 0.3s;
 }
 
@@ -84,8 +86,8 @@ section {
 .p-card {
   background: white;
   padding: 20px;
-  border-radius: 15px;
   border-left: 4px solid #2f5d3a;
+  border-radius: 10px;
 }
 
 /* VALORES */
@@ -97,13 +99,13 @@ section {
 
 .valor {
   background: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .valor i {
-  display: block;
+  font-size: 25px;
   margin-bottom: 10px;
   color: #2f5d3a;
 }
@@ -121,8 +123,8 @@ section {
 }
 
 .redes a {
-  color: white;
   font-size: 25px;
+  color: white;
 }
 
 /* FORM */
@@ -153,4 +155,11 @@ footer {
   padding: 20px;
   background: #1f3d2b;
   color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
