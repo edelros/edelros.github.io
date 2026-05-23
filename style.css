@@ -1,8 +1,8 @@
 body{
   margin:0;
   font-family:'Segoe UI', sans-serif;
-  background:#f5f1e8;
-  color:#333;
+  background:#f4f1ea;
+  color:#2b2b2b;
 }
 
 /* HEADER */
@@ -15,21 +15,16 @@ header{
   box-shadow:0 10px 30px rgba(0,0,0,0.05);
 }
 
-.logo{
-  height:80px;
-}
+.logo{ height:85px; }
 
-/* NAV MEJORADO */
+/* NAV */
 nav a{
-  margin:0 10px;
   text-decoration:none;
   color:#2f5d3a;
-  font-weight:600;
-  padding:8px 14px;
-  border-radius:8px;
+  padding:10px 15px;
+  border-radius:10px;
   transition:0.3s;
 }
-
 nav a:hover{
   background:#2f5d3a;
   color:white;
@@ -45,208 +40,131 @@ nav a:hover{
 }
 
 .overlay{
-  background:rgba(0,0,0,0.6);
-  padding:60px;
+  background:rgba(0,0,0,0.65);
+  padding:70px;
   color:white;
   text-align:center;
-  border-radius:12px;
-  max-width:700px;
+  border-radius:15px;
 }
 
 /* SECCIONES */
-section{
-  padding:100px 60px;
-}
+section{ padding:110px 60px; }
+h2{ text-align:center; margin-bottom:60px; }
 
-h2{
-  text-align:center;
-  margin-bottom:50px;
-  font-size:28px;
-}
-
-/* HISTORIA (YA NO MUERTA) */
+/* HISTORIA */
 .historia-box{
   background:white;
-  padding:40px;
-  border-radius:15px;
+  padding:50px;
+  border-radius:18px;
   max-width:900px;
   margin:auto;
-  line-height:1.8;
-  box-shadow:0 20px 50px rgba(0,0,0,0.08);
-  position:relative;
+  line-height:1.9;
+  box-shadow:0 25px 60px rgba(0,0,0,0.08);
 }
 
-.historia-box::before{
-  content:"";
-  position:absolute;
-  left:-10px;
-  top:30px;
-  width:6px;
-  height:60%;
-  background:#2f5d3a;
-  border-radius:10px;
-}
-
-/* PROPOSITO (INTEGRADO) */
+/* PROPOSITO */
 .pro-wrapper{
   display:flex;
-  align-items:center;
   justify-content:center;
-  gap:40px;
+  gap:60px;
   flex-wrap:wrap;
 }
-
 .pro-box{
   background:white;
-  padding:30px;
-  border-radius:12px;
-  max-width:500px;
-  box-shadow:0 15px 40px rgba(0,0,0,0.08);
-}
-
-.pro-img{
-  max-width:220px;
-  opacity:0.25;
+  padding:35px;
   border-radius:15px;
 }
+.pro-img{
+  max-width:240px;
+  opacity:0.18;
+}
 
-/* SERVICIOS (IMPACTO REAL) */
+/* SERVICIOS CON IMAGEN */
+.card{
+  height:280px;
+  border-radius:18px;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:25px;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+.card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+}
+.card h3,.card p{ position:relative; z-index:2; }
+
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:30px;
 }
 
-.card{
-  position:relative;
-  height:260px;
-  border-radius:15px;
-  overflow:hidden;
-  color:white;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  padding:20px;
-  background-size:cover;
-  background-position:center;
-  box-shadow:0 20px 50px rgba(0,0,0,0.15);
-  transition:0.4s;
-}
+/* IMÁGENES */
+.card:nth-child(1){background-image:url('https://images.unsplash.com/photo-1500595046743-cd271d694d30');}
+.card:nth-child(2){background-image:url('https://images.unsplash.com/photo-1601758064223-1c5d3d1b6f27');}
+.card:nth-child(3){background-image:url('https://images.unsplash.com/photo-1593113598332-cd59a93c6135');}
+.card:nth-child(4){background-image:url('https://images.unsplash.com/photo-1599058917765-a780eda07a3e');}
+.card:nth-child(5){background-image:url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf');}
 
-.card:hover{
-  transform:scale(1.03);
-}
-
-.card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-}
-
-.card h3,
-.card p{
-  position:relative;
-  z-index:2;
-}
-
-/* IMAGENES SERVICIOS */
-.card:nth-child(1){
-  background-image:url('https://images.unsplash.com/photo-1500595046743-cd271d694d30');
-}
-.card:nth-child(2){
-  background-image:url('https://images.unsplash.com/photo-1560493676-04071c5f467b');
-}
-.card:nth-child(3){
-  background-image:url('https://images.unsplash.com/photo-1592982537447-6f2a6a0c7f06');
-}
-.card:nth-child(4){
-  background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72');
-}
-.card:nth-child(5){
-  background-image:url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf');
-}
-
-/* VALORES (YA NO MUERTOS) */
+/* VALORES */
 .small .card{
   background:white;
   color:#333;
-  height:auto;
   text-align:center;
-  padding:25px;
+  padding:30px;
 }
 
-.small .card i{
-  font-size:28px;
-  color:#2f5d3a;
-  margin-bottom:10px;
-}
-
-/* PORQUE (AHORA VENDE) */
+/* PORQUE */
 .porque-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+  gap:30px;
 }
-
 .porque-card{
   background:white;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 15px 40px rgba(0,0,0,0.08);
-  border-left:6px solid #2f5d3a;
-  transition:0.3s;
-}
-
-.porque-card:hover{
-  transform:translateY(-5px);
+  padding:35px;
+  border-radius:15px;
+  border-left:8px solid #2f5d3a;
 }
 
 /* CONTACTO */
-.contacto{
-  background:#1f3d2b;
-  color:white;
-  text-align:center;
-}
-
-.redes a{
-  margin:0 10px;
-  font-size:28px;
-  color:white;
-}
+.contacto{ background:#1e3a2a; color:white; text-align:center; }
+.redes a{ color:white; font-size:30px; margin:0 12px; }
 
 /* FORM */
 form{
-  max-width:400px;
+  max-width:420px;
   margin:auto;
   display:flex;
   flex-direction:column;
-  gap:12px;
+  gap:14px;
 }
-
 input, textarea{
-  padding:12px;
+  padding:14px;
+  border-radius:10px;
   border:none;
-  border-radius:8px;
 }
-
 button{
   background:#2f5d3a;
   color:white;
-  padding:14px;
+  padding:16px;
   border:none;
-  border-radius:8px;
-  cursor:pointer;
 }
 
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:40px;
-  background:#eee;
+/* ANIMACIONES */
+.hidden{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.8s ease;
 }
-
-.frase{
-  font-style:italic;
-  margin-bottom:10px;
+.show{
+  opacity:1;
+  transform:translateY(0);
 }
