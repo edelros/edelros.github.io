@@ -1,35 +1,40 @@
 body{
   margin:0;
   font-family:'Segoe UI', sans-serif;
-  background:#f4f1ea;
+  background:#f7f5ef;
   color:#2b2b2b;
 }
 
+/* HEADER */
 header{
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:20px 60px;
   background:white;
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  box-shadow:0 8px 25px rgba(0,0,0,0.05);
 }
 
 .logo{
-  height:95px;
-  filter:drop-shadow(0 5px 10px rgba(0,0,0,0.15));
+  height:100px;
+  filter:drop-shadow(0 6px 12px rgba(0,0,0,0.15));
 }
 
+/* NAV */
 nav a{
   text-decoration:none;
   color:#2f5d3a;
-  padding:10px 15px;
+  padding:10px 16px;
   border-radius:10px;
+  font-weight:600;
 }
+
 nav a:hover{
   background:#2f5d3a;
   color:white;
 }
 
+/* HERO */
 .hero{
   height:90vh;
   background:url('guachucal.png') center/cover no-repeat;
@@ -39,29 +44,54 @@ nav a:hover{
 }
 
 .overlay{
-  background:rgba(0,0,0,0.65);
+  background:rgba(0,0,0,0.6);
   padding:70px;
   color:white;
   border-radius:15px;
+  text-align:center;
+}
+
+/* TITULOS (YA NO WORD) */
+h2{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:50px;
+  color:#1f3d2b;
+  position:relative;
+}
+
+h2::after{
+  content:"";
+  width:60px;
+  height:4px;
+  background:#2f5d3a;
+  display:block;
+  margin:12px auto 0;
+  border-radius:10px;
+}
+
+/* SECCIONES */
+section{
+  padding:100px 60px;
 }
 
 /* HISTORIA */
 .historia-box{
   background:white;
   padding:50px;
-  border-radius:18px;
+  border-radius:20px;
   max-width:900px;
   margin:auto;
   line-height:1.9;
-  box-shadow:0 25px 60px rgba(0,0,0,0.08);
+  box-shadow:0 20px 50px rgba(0,0,0,0.08);
 }
 
-/* PROPOSITO MEJORADO */
+/* PROPOSITO BIEN INTEGRADO */
 .pro-wrapper{
   display:grid;
   grid-template-columns:1fr 1fr;
-  align-items:center;
   gap:60px;
+  align-items:center;
   max-width:1000px;
   margin:auto;
 }
@@ -75,8 +105,8 @@ nav a:hover{
 
 .pro-img{
   width:100%;
-  max-width:300px;
-  opacity:0.25;
+  max-width:260px;
+  opacity:0.2;
   margin:auto;
 }
 
@@ -89,7 +119,8 @@ nav a:hover{
 
 .card{
   height:280px;
-  border-radius:18px;
+  border-radius:20px;
+  overflow:hidden;
   color:white;
   display:flex;
   flex-direction:column;
@@ -98,6 +129,7 @@ nav a:hover{
   background-size:cover;
   background-position:center;
   position:relative;
+  box-shadow:0 20px 50px rgba(0,0,0,0.2);
 }
 
 .card::after{
@@ -107,31 +139,60 @@ nav a:hover{
   background:linear-gradient(to top, rgba(0,0,0,0.85), transparent);
 }
 
-.card h3,.card p{ position:relative; z-index:2; }
+.card h3,.card p{
+  position:relative;
+  z-index:2;
+}
 
-/* IMÁGENES CORRECTAS */
-.card:nth-child(1){background-image:url('https://images.unsplash.com/photo-1500595046743-cd271d694d30');}
-.card:nth-child(2){background-image:url('https://images.unsplash.com/photo-1570042225831-d98fa7577f1e');}
-.card:nth-child(3){background-image:url('https://images.unsplash.com/photo-1524594154908-edd97d0bdb33');}
-.card:nth-child(4){background-image:url('https://images.unsplash.com/photo-1595152772835-219674b2a8a6');}
-.card:nth-child(5){background-image:url('https://images.unsplash.com/photo-1464226184884-fa280b87c399');}
+/* IMÁGENES BIEN PENSADAS */
 
-/* VALORES */
+/* Producción (cultivo real, no vaca random) */
+.card:nth-child(1){
+  background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
+}
+
+/* Manejo de especies (ganadería bien tomada) */
+.card:nth-child(2){
+  background-image:url('https://images.unsplash.com/photo-1560493676-04071c5f467b');
+}
+
+/* Formación rural (MUJER enseñando) */
+.card:nth-child(3){
+  background-image:url('https://images.unsplash.com/photo-1593113598332-cd59a93c6135');
+}
+
+/* Asesorías (MUJER liderando en campo) */
+.card:nth-child(4){
+  background-image:url('https://images.unsplash.com/photo-1599058917765-a780eda07a3e');
+}
+
+/* Sostenibilidad (conexión tierra-producción) */
+.card:nth-child(5){
+  background-image:url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf');
+}
+
+/* VALORES (CLAROS Y ELEGANTES) */
 .small .card{
-  background:white;
-  color:#333;
-  text-align:center;
+  background:#ffffff;
+  color:#2b2b2b;
   padding:30px;
+  text-align:center;
   border-radius:15px;
-  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.small .card:hover{
+  transform:translateY(-6px);
 }
 
 .small .card i{
   font-size:34px;
   color:#2f5d3a;
+  margin-bottom:12px;
 }
 
-/* PORQUE */
+/* PORQUE (MÁS IMPACTO) */
 .porque-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -142,11 +203,21 @@ nav a:hover{
   background:white;
   padding:35px;
   border-radius:15px;
-  border-left:8px solid #2f5d3a;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  border-top:5px solid #2f5d3a;
+  transition:0.3s;
+}
+
+.porque-card:hover{
+  transform:translateY(-8px);
 }
 
 /* CONTACTO */
-.contacto{ background:#1e3a2a; color:white; text-align:center; }
+.contacto{
+  background:#1f3d2b;
+  color:white;
+  text-align:center;
+}
 
 .redes a{
   color:white;
@@ -174,6 +245,7 @@ button{
   color:white;
   padding:16px;
   border:none;
+  border-radius:10px;
 }
 
 /* ANIMACIONES */
@@ -182,6 +254,7 @@ button{
   transform:translateY(40px);
   transition:all 0.8s ease;
 }
+
 .show{
   opacity:1;
   transform:translateY(0);
