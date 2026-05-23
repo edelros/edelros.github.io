@@ -2,97 +2,62 @@ body{
   margin:0;
   font-family:'Segoe UI', sans-serif;
   background:#f7f5ef;
-  color:#2b2b2b;
 }
 
-/* HEADER */
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 60px;
-  background:white;
-  box-shadow:0 8px 25px rgba(0,0,0,0.05);
-}
-
+/* LOGO */
 .logo{
   height:100px;
-  filter:drop-shadow(0 6px 12px rgba(0,0,0,0.15));
 }
 
-/* NAV */
-nav a{
+/* NAV BOTONES */
+.btn-nav{
   text-decoration:none;
-  color:#2f5d3a;
   padding:10px 16px;
-  border-radius:10px;
+  color:#2f5d3a;
+  border-radius:8px;
   font-weight:600;
 }
 
-nav a:hover{
+.btn-nav:hover{
   background:#2f5d3a;
   color:white;
 }
 
-/* HERO */
-.hero{
-  height:90vh;
-  background:url('guachucal.png') center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.overlay{
-  background:rgba(0,0,0,0.6);
-  padding:70px;
+.contacto-btn{
+  background:#2f5d3a;
   color:white;
-  border-radius:15px;
-  text-align:center;
 }
 
-/* TITULOS (YA NO WORD) */
+/* TITULOS PRO */
 h2{
   text-align:center;
   font-size:32px;
   margin-bottom:50px;
-  color:#1f3d2b;
   position:relative;
 }
 
 h2::after{
   content:"";
-  width:60px;
-  height:4px;
+  width:50px;
+  height:3px;
   background:#2f5d3a;
   display:block;
-  margin:12px auto 0;
-  border-radius:10px;
+  margin:10px auto;
 }
 
-/* SECCIONES */
-section{
-  padding:100px 60px;
-}
-
-/* HISTORIA */
-.historia-box{
-  background:white;
-  padding:50px;
-  border-radius:20px;
-  max-width:900px;
-  margin:auto;
-  line-height:1.9;
-  box-shadow:0 20px 50px rgba(0,0,0,0.08);
-}
-
-/* PROPOSITO BIEN INTEGRADO */
+/* PROPOSITO */
 .pro-wrapper{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:60px;
   align-items:center;
+  gap:50px;
   max-width:1000px;
+  margin:auto;
+}
+
+.pro-img{
+  max-width:220px;
+  opacity:0.2;
   margin:auto;
 }
 
@@ -100,36 +65,19 @@ section{
   background:white;
   padding:40px;
   border-radius:15px;
-  box-shadow:0 20px 50px rgba(0,0,0,0.08);
 }
 
-.pro-img{
-  width:100%;
-  max-width:260px;
-  opacity:0.2;
-  margin:auto;
-}
-
-/* SERVICIOS */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
+/* SERVICIOS IMÁGENES CORRECTAS */
 .card{
   height:280px;
   border-radius:20px;
-  overflow:hidden;
-  color:white;
   display:flex;
   flex-direction:column;
   justify-content:flex-end;
   padding:25px;
+  color:white;
   background-size:cover;
-  background-position:center;
   position:relative;
-  box-shadow:0 20px 50px rgba(0,0,0,0.2);
 }
 
 .card::after{
@@ -139,123 +87,25 @@ section{
   background:linear-gradient(to top, rgba(0,0,0,0.85), transparent);
 }
 
-.card h3,.card p{
-  position:relative;
-  z-index:2;
-}
+/* IMÁGENES BIEN USADAS */
+.card:nth-child(1){background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');}
+.card:nth-child(2){background-image:url('https://images.unsplash.com/photo-1560493676-04071c5f467b');}
+.card:nth-child(3){background-image:url('https://images.unsplash.com/photo-1593113598332-cd59a93c6135');}
+.card:nth-child(4){background-image:url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae');}
+.card:nth-child(5){background-image:url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf');}
 
-/* IMÁGENES BIEN PENSADAS */
-
-/* Producción (cultivo real, no vaca random) */
-.card:nth-child(1){
-  background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
-}
-
-/* Manejo de especies (ganadería bien tomada) */
-.card:nth-child(2){
-  background-image:url('https://images.unsplash.com/photo-1560493676-04071c5f467b');
-}
-
-/* Formación rural (MUJER enseñando) */
-.card:nth-child(3){
-  background-image:url('https://images.unsplash.com/photo-1593113598332-cd59a93c6135');
-}
-
-/* Asesorías (MUJER liderando en campo) */
-.card:nth-child(4){
-  background-image:url('https://images.unsplash.com/photo-1599058917765-a780eda07a3e');
-}
-
-/* Sostenibilidad (conexión tierra-producción) */
-.card:nth-child(5){
-  background-image:url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf');
-}
-
-/* VALORES (CLAROS Y ELEGANTES) */
+/* VALORES */
 .small .card{
-  background:#ffffff;
-  color:#2b2b2b;
-  padding:30px;
+  background:white;
+  padding:20px;
+  border-radius:12px;
   text-align:center;
-  border-radius:15px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.05);
-  transition:0.3s;
 }
 
-.small .card:hover{
-  transform:translateY(-6px);
-}
-
-.small .card i{
-  font-size:34px;
-  color:#2f5d3a;
-  margin-bottom:12px;
-}
-
-/* PORQUE (MÁS IMPACTO) */
-.porque-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-}
-
+/* PORQUE */
 .porque-card{
   background:white;
-  padding:35px;
-  border-radius:15px;
-  box-shadow:0 15px 40px rgba(0,0,0,0.08);
-  border-top:5px solid #2f5d3a;
-  transition:0.3s;
-}
-
-.porque-card:hover{
-  transform:translateY(-8px);
-}
-
-/* CONTACTO */
-.contacto{
-  background:#1f3d2b;
-  color:white;
-  text-align:center;
-}
-
-.redes a{
-  color:white;
-  font-size:30px;
-  margin:0 12px;
-}
-
-/* FORM */
-form{
-  max-width:420px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
-
-input, textarea{
-  padding:14px;
-  border:none;
-  border-radius:10px;
-}
-
-button{
-  background:#2f5d3a;
-  color:white;
-  padding:16px;
-  border:none;
-  border-radius:10px;
-}
-
-/* ANIMACIONES */
-.hidden{
-  opacity:0;
-  transform:translateY(40px);
-  transition:all 0.8s ease;
-}
-
-.show{
-  opacity:1;
-  transform:translateY(0);
+  padding:30px;
+  border-radius:12px;
+  border-top:4px solid #2f5d3a;
 }
