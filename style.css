@@ -1588,3 +1588,142 @@ text-align:center;
 }
 
 }
+
+/* ===================================
+MEJORAS PREMIUM EDELROS
+=================================== */
+
+/* BADGES DEL HERO */
+
+.hero-badges{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:35px;
+}
+
+.hero-badges span{
+background:rgba(255,255,255,.12);
+border:1px solid rgba(255,255,255,.25);
+padding:10px 18px;
+border-radius:30px;
+color:white;
+backdrop-filter:blur(10px);
+font-size:.9rem;
+font-weight:500;
+}
+
+/* COMPROMISO */
+
+.commitment-section{
+padding:120px 0;
+background:#fafafa;
+}
+
+.commitment-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:60px;
+}
+
+.commitment-card{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+transition:.35s ease;
+}
+
+.commitment-card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.commitment-card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+margin-bottom:15px;
+color:var(--primary);
+}
+
+.commitment-card p{
+color:var(--gray);
+line-height:1.8;
+}
+
+/* MEJORA DE TARJETAS */
+
+.service-card,
+.value-card,
+.legacy-card,
+.why-card{
+border:1px solid rgba(0,0,0,.04);
+}
+
+/* FORMULARIO MÁS PREMIUM */
+
+.contact-form{
+border:1px solid rgba(0,0,0,.05);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+outline:none;
+
+border-color:var(--primary);
+
+box-shadow:0 0 0 4px rgba(139,46,46,.10);
+
+}
+
+/* FOOTER */
+
+.footer-brand{
+
+margin-top:8px;
+
+margin-bottom:20px;
+
+font-weight:600;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#D4A373;
+
+}
+
+/* EFECTO SUAVE EN SECCIONES */
+
+.history-section,
+.purpose-section,
+.services-section,
+.values-section,
+.vision-section,
+.why-section,
+.contact-section{
+
+position:relative;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.commitment-grid{
+grid-template-columns:1fr;
+}
+
+.hero-badges{
+justify-content:center;
+}
+
+.commitment-card{
+padding:30px;
+}
+
+}
